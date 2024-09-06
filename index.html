@@ -1,10 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/a576612222.css"
+      crossorigin="anonymous"
+    />
+    <script src="/js/bootstrap.min.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Assignment to learn HTML, CSS (SCSS)" />
+    <meta name="keywords" content="HTML, CSS (SCSS)" />
+    <meta name="author" content="Emil Begovic" />
+    <link rel="icon" href="../HTML & CSS/media/solid.svg" />
     <title>Silicon Design</title>
   </head>
   <body>
+    <header>
+      <div class="ctn">
+        <div class="logo">
+          <img src="../media/solid.svg" alt="Logo" />
+        </div>
+        <nav class="navbar">
+          <a class="nav-ft" href="index.html">Features</a>
+        </nav>
+        <div id="darkmode-switch" class="btn-toggle-switch">
+          <span class="label">Dark mode</span>
+          <label class="switch" class="toggle-switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <a id="auth" href="#" class="btn-primary">
+          <i class="fa-thin fa-user-large"></i>
+          <span>Sign in / Up</span>
+        </a>
+        <button class="btn-mobile">
+          <i class="fa-regular fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="page-1">
+        <div class="background-gradient">
+          <div class="pg1-grid">
+            <h1>Manage All Your Money in One App</h1>
+            <div class="p1-g-tablet">
+              <div class="btn-store-grid">
+                <p class="pg-1-p">
+                  We offer you a new generation of mobile banking. Save, spend &
+                  manage money in your pocket.
+                </p>
+                <div class="btn-stores">
+                  <button class="btn-store">
+                    <img src="/media/appstore-light.svg" alt="App Store" />
+                  </button>
+                  <button class="btn-store">
+                    <img src="/media/googleplay-light.svg" alt="Play Store" />
+                  </button>
+                </div>
+              </div>
+              <div class="discover-wrapper">
+                <div class="btn-discover">
+                  <img src="/media/button_Icon.svg" />
+                </div>
+                <span>Discover more</span>
+              </div>
+            </div>
+            <div class="iphone">
+              <img src="/media/Iphone/image (1).svg" alt="Iphone" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page-2">
+        <div class="ctn">
+          <div class="sponsors">
+            <div class="sp4">
+              <img src="/media/logo/logo1.svg" alt="Logo 1" />
+            </div>
+            <div class="sp4">
+              <img src="/media/logo/logo2.svg" alt="Logo 2" />
+            </div>
+            <div class="sp4">
+              <img src="/media/logo/logo3.svg" alt="Logo 3" />
+            </div>
+            <div class="sp4">
+              <img src="/media/logo/logo4.svg" alt="Logo 4" />
+            </div>
+            <div class="desk">
+              <img src="/media/logo/logo5.svg" alt="Logo 5" />
+            </div>
+            <div class="desk">
+              <img src="/media/logo/logo6.svg" alt="Logo 6" />
+            </div>
+          </div>
+          <h2>App Features</h2>
+          <p class="ft-intro">
+            Our app offers 24/7 account access and allows you to download
+            transaction history in PDF, CSV, or Excel. Schedule future
+            transfers, create secure yet memorable passwords, and easily recover
+            them if needed.
+          </p>
+          <div class="app-ft">
+            <div class="app-ft-grid-1">
+              <div class="ft-bg-pg2">
+                <img src="/media/icons/payments.svg" alt="Easy Payments" />
+              </div>
+              <div class="ft-text">
+                <h3>Easy Payments</h3>
+                <p>
+                  Payments in our app make managing transactions effortless and
+                  efficient
+                </p>
+              </div>
+            </div>
+            <div class="app-ft-grid-1">
+              <div class="ft-bg-pg2">
+                <img src="/media/icons/security.svg" alt="Data Security" />
+              </div>
+              <div class="ft-text">
+                <h3>Data Security</h3>
+                <p>
+                  This is top priority for our app, ensuring that your personal
+                  and financial information is protected with the highest
+                  standards.
+                </p>
+              </div>
+            </div>
+            <div class="app-ft-grid-1">
+              <div class="ft-bg-pg2">
+                <img src="/media/icons/statistics.svg" alt="Cost Statistics" />
+              </div>
+              <div class="ft-text">
+                <h3>Cost Statistics</h3>
+                <p>
+                  in our app provide you with valuable insights into your
+                  spending patterns and financial habits.
+                </p>
+              </div>
+            </div>
+            <div class="app-ft-grid-1">
+              <div class="ft-bg-pg2">
+                <img
+                  src="/media//icons/support.svg"
+                  alt="Support 24/7"
+                  class="box"
+                />
+              </div>
+              <div class="ft-text">
+                <h3>Support 24/7</h3>
+                <p>
+                  We ensure that you receive help and assistance whenever you
+                  need it, around the clock
+                </p>
+              </div>
+            </div>
+            <div class="app-ft-grid-1">
+              <div class="ft-bg-pg2">
+                <img src="/media/icons/cashback.svg" alt="Regular Cashback" />
+              </div>
+              <div class="ft-text">
+                <h3>Regular Cashback</h3>
+                <p>
+                  This is a rewarding feature of our app designed to give you
+                  money back on your everyday purchases
+                </p>
+              </div>
+            </div>
+            <div class="app-ft-grid-1">
+              <div class="ft-bg-pg2">
+                <img src="/media/icons/happy.svg" alt="Top Standards" />
+              </div>
+              <div class="ft-text">
+                <h3>Top Standards</h3>
+                <p>
+                  in our app ensure that you receive a high-quality, reliable,
+                  and secure experience
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page-3">
+        <div class="pg3-bg">
+          <div class="pg3-ctn">
+            <h2>How Does It Work?</h2>
+            <img
+              src="/media/Iphone/phone_work_fill.svg"
+              alt="screenshot"
+              class="screenshot"
+            />
+            <h3>Transfers to people from your contact list</h3>
+            <div class="pg3-p-ctn">
+              <p class="pg3-p">
+                straight from your contact list! With our app, you can transfer
+                funds to people you know directly from your saved contacts,
+                making transactions faster and simpler than ever before.
+              </p>
+            </div>
+            <br />
+          </div>
+        </div>
+      </section>
+      <section class="page-4">
+        <h2>Any questions? Check out the FAQs</h2>
+        <p>Still have unanswered questions and need to get in touch?</p>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
+                style="font-family: manrope; font-weight: 800"
+              >
+                Is any of my personal information stored in the App?
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse show"
+            >
+              <div
+                class="accordion-body"
+                style="font-family: manrope; color: #585c7b"
+              >
+                When you use our app, your privacy and security are our top
+                priorities. We understand that you may have concerns about your
+                personal information, and that's why we've designed our app with
+                transparency and user control in mind. Our privacy policy
+                clearly outlines what data we collect, how we use it, and the
+                robust measures we take to protect it. <br /><br />
+
+                You’ll find that we only store the information necessary to
+                enhance your experience and provide you with the best possible
+                service. Plus, you have complete control over your data and can
+                adjust your privacy settings at any time. Rest assured, your
+                personal information is handled with the utmost care and
+                respect, ensuring a secure and trustworthy experience every time
+                you use our app.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo"
+                style="font-family: manrope; font-weight: 800"
+              >
+                What formats can I download my transaction history in?
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseTwo"
+              class="accordion-collapse collapse"
+            >
+              <div
+                class="accordion-body"
+                style="font-family: manrope; color: #585c7b"
+              >
+                Great question! We understand how important it is to have
+                flexible options for managing your transaction history. That’s
+                why our app offers a variety of formats for downloading your
+                transaction history, tailored to meet your needs. You can easily
+                export your data in popular formats such as PDF for easy reading
+                and sharing, CSV for seamless integration with spreadsheets and
+                accounting software, and Excel for in-depth analysis and custom
+                reporting. <br />
+                <br />
+                Whether you need a comprehensive summary or detailed data, our
+                app ensures you have the tools to access and utilize your
+                transaction history in the format that works best for you. Enjoy
+                the convenience and flexibility to keep your financial records
+                organized and accessible, anytime you need them!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseThree"
+                style="font-family: manrope; font-weight: 800"
+              >
+                Can I schedule future transfers?
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseThree"
+              class="accordion-collapse collapse"
+            >
+              <div
+                class="accordion-body"
+                style="font-family: manrope; color: #585c7b"
+              >
+                Absolutely! With our app, managing your finances has never been
+                easier. We offer the convenience of scheduling future transfers,
+                so you can stay on top of your financial commitments without the
+                hassle of manual transactions. Whether you need to set up
+                recurring payments, automate savings, or ensure timely bill
+                payments, our scheduling feature lets you plan transfers in
+                advance and execute them automatically on your preferred
+                schedule.<br />
+                <br />
+                Enjoy peace of mind knowing that your financial tasks are
+                handled effortlessly and on time, giving you more freedom to
+                focus on what truly matters. With our intuitive scheduling
+                options, you’ll have complete control over your finances, making
+                banking smoother and more efficient than ever before!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseFour"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseFour"
+                style="font-family: manrope; font-weight: 800"
+              >
+                When can I use Banking App services?
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseFour"
+              class="accordion-collapse collapse"
+            >
+              <div
+                class="accordion-body"
+                style="font-family: manrope; color: #585c7b"
+              >
+                Experience the ultimate convenience with our Banking App! Our
+                services are available to you 24/7, ensuring you have access to
+                your financial needs anytime, anywhere. Whether it's early in
+                the morning, late at night, or during a weekend getaway, you can
+                manage your accounts, make transactions, and track your finances
+                with ease. <br />
+                <br />Our app is designed to fit seamlessly into your busy
+                lifestyle, providing you with real-time updates and instant
+                access to all your banking services whenever you need them. Say
+                goodbye to traditional banking hours and embrace the freedom of
+                managing your finances on your own schedule. With our Banking
+                App, you’re always just a tap away from complete financial
+                control!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseFive"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseFive"
+                style="font-family: manrope; font-weight: 800"
+              >
+                Can I create my own password that is easy for me to remember?
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseFive"
+              class="accordion-collapse collapse"
+            >
+              <div
+                class="accordion-body"
+                style="font-family: manrope; color: #585c7b"
+              >
+                Absolutely! We believe that managing your security should be
+                both simple and personal. With our app, you can create a
+                password that’s easy for you to remember without compromising on
+                security. Our system allows you to set a password that meets our
+                robust security criteria while still being memorable for you.
+                <br />
+                <br />Enjoy the peace of mind that comes with knowing your
+                password is both secure and easy to recall, making your
+                experience seamless and stress-free. Say goodbye to forgotten
+                passwords and hello to a user-friendly approach to security with
+                our app—designed with your convenience and safety in mind!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseSix"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseSix"
+                style="font-family: manrope; font-weight: 800"
+              >
+                What happens if I forget or lose my password?
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseSix"
+              class="accordion-collapse collapse"
+            >
+              <div
+                class="accordion-body"
+                style="font-family: manrope; color: #585c7b"
+              >
+                No worries at all! If you ever forget or lose your password, our
+                app has you covered with a simple and secure recovery process.
+                We've designed an easy-to-follow, step-by-step solution to help
+                you regain access swiftly. With just a few clicks, you can reset
+                your password through our secure recovery options, including
+                email verification or multi-factor authentication.<br />
+                <br />
+                Your security is our top priority, so you can be confident that
+                your account remains protected throughout the process. Plus, our
+                dedicated support team is always ready to assist you if you need
+                any extra help. Enjoy peace of mind knowing that recovering your
+                access is straightforward and hassle-free, keeping your banking
+                experience smooth and stress-free!
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-faq">
+          <button>Contact us now</button>
+        </div>
+        <div class="newsletter-cnt">
+          <div class="newsletter-bg">
+            <div class="newsletter-header">
+              <img src="/media/icons/notification-icon.svg" />
+              <h2>Subscribe to our newsletter</h2>
+            </div>
+            <div class="input-group mb-sm-5">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Your email"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+                style="font-family: manrope"
+              />
+              <button
+                class="btn btn-outline-secondary"
+                type="button"
+                id="button-addon2"
+                style="background-color: #6366f1; color: white"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>© 2024 Silicon. All rights reserved. Credit MadrasThemes</footer>
   </body>
 </html>
