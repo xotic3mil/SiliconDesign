@@ -63,20 +63,8 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-:root {
-  --ctn-padding: 1rem;
-}
-
 * {
   box-sizing: border-box;
-}
-
-.ctn {
-  width: 100%;
-  padding-left: var(--ctn-padding);
-  padding-right: var(--ctn-padding);
-  margin-left: auto;
-  margin-right: auto;
 }
 
 body,
@@ -105,14 +93,32 @@ a {
 }
 
 h1 {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  text-align: center;
+  color: #131022;
   font-family: "manrope";
+  font-style: normal;
+  text-align: center;
+  font-weight: 800;
+  margin-margin-top: 5rem;
+  margin-margin-bottom: 5rem;
 }
 
 h2 {
   text-align: center;
+}
+
+header .ctn {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: grid;
+  align-items: center;
+  grid-template-areas: "logo nav auth";
+  grid-template-columns: auto auto 1fr;
+  gap: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+header .ctn .logo {
+  grid-column: 1;
 }
 
 .page-1 {
@@ -148,6 +154,13 @@ h2 {
   font-weight: 400;
   line-height: 25.6px;
 }
+.page-2 .page-2-ctn {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .ft-bg-pg2 {
   display: flex;
@@ -163,13 +176,13 @@ h2 {
 }
 
 .btn-stores {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   justify-content: center;
   align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  gap: 1rem;
 }
 .btn-stores .btn-store {
   padding: 8px;
@@ -211,11 +224,11 @@ h2 {
 .sp4 {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 159px;
   height: 99px;
   padding: 33px 9px;
-  justify-content: center;
-  align-items: center;
   flex-shrink: 0;
   border-radius: 8px;
   border: 1px solid #e2e5f1;
@@ -229,28 +242,15 @@ h2 {
 .desk {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 159px;
   height: 99px;
   padding: 33px 9px;
-  justify-content: center;
-  align-items: center;
   flex-shrink: 0;
   border-radius: 8px;
   border: 1px solid #e2e5f1;
   display: none;
-}
-
-header .ctn {
-  display: grid;
-  align-items: center;
-  grid-template-areas: "logo nav auth";
-  grid-template-columns: auto auto 1fr;
-  gap: 1.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-header .ctn .logo {
-  grid-column: 1;
 }
 
 .btn-primary {
@@ -317,8 +317,8 @@ header .ctn .logo {
   text-align: center;
 }
 .page-3 .pg3-ctn {
-  padding-left: var(--ctn-padding);
-  padding-right: var(--ctn-padding);
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .page-3 .pg3-p {
   color: #585c7b;
