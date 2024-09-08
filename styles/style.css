@@ -98,8 +98,8 @@ h1 {
   font-style: normal;
   text-align: center;
   font-weight: 800;
-  margin-margin-top: 5rem;
-  margin-margin-bottom: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 h2 {
@@ -127,7 +127,12 @@ header .ctn .logo {
   margin-right: auto;
 }
 .page-1 .background-gradient {
-  background: radial-gradient(circle at center bottom, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
+  background: radial-gradient(
+    circle at center bottom,
+    rgba(99, 102, 241, 0.1) 0%,
+    rgba(218, 70, 239, 0.05) 42%,
+    rgba(241, 244, 253, 0.07) 83%
+  );
   height: 100svh;
 }
 
@@ -393,7 +398,12 @@ footer {
     max-width: 730px;
   }
   .page-1 .background-gradient {
-    background: radial-gradient(circle at center bottom, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
+    background: radial-gradient(
+      circle at center bottom,
+      rgba(99, 102, 241, 0.1) 0%,
+      rgba(218, 70, 239, 0.05) 42%,
+      rgba(241, 244, 253, 0.07) 83%
+    );
     height: 100%;
   }
   .pg1-grid {
