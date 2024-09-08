@@ -140,11 +140,16 @@ header .ctn .logo {
 }
 
 .page-2 .ft-intro {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   color: #585c7b;
   text-align: center;
-  font-size: 18px;
   font-style: normal;
+  width: 703px;
+  height: 86px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 29px;
 }
@@ -222,16 +227,6 @@ header .ctn .logo {
 }
 
 .sp4 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 159px;
-  height: 99px;
-  padding: 33px 9px;
-  flex-shrink: 0;
-  border-radius: 8px;
-  border: 1px solid #e2e5f1;
   display: none;
 }
 .sp4 img {
@@ -328,6 +323,12 @@ header .ctn .logo {
   font-weight: 400;
   line-height: 26px;
 }
+.page-3 .pg3-iphone-1 {
+  display: none;
+}
+.page-3 .pg3-iphone-3 {
+  display: none;
+}
 
 .pg3-bg {
   background-color: #f3f6ff;
@@ -408,8 +409,8 @@ footer {
     color: #131022;
     text-align: center;
     font-size: 44px;
-    font-style: normal;
     font-weight: 800;
+    font-style: normal;
     line-height: 57px;
   }
   .pg1-grid .p1-g-tablet {
@@ -483,8 +484,68 @@ footer {
     margin-right: 30px;
     align-items: center;
   }
+  .page-2 .sponsors {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .page-2 .sponsors .sp4 {
+    width: 159px;
+    height: 99px;
+    border-radius: 8px;
+    padding: 32px 9px;
+    border-radius: 8px;
+    border: 1px solid #e2e5f1;
+    background: #fff;
+    display: block;
+  }
   .desk {
     display: none;
+  }
+  .page-3 h2 {
+    margin-bottom: 2rem;
+  }
+  .page-3 h3 {
+    margin-top: 2rem;
+  }
+  .page-3 .pg3-bg {
+    padding: 64px 19px 48px 19px;
+  }
+  .page-3 .pg3-iphone-ctn {
+    padding-left: 0.2px;
+    padding-right: 0.2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .page-3 .pg3-iphone-ctn .pg3-iphone-1 {
+    display: block;
+    width: 203px;
+    height: 410px;
+  }
+  .page-3 .pg3-iphone-ctn .pg3-iphone-3 {
+    display: block;
+    width: 203px;
+    height: 410px;
+  }
+  .page-3 .pg3-p-ctn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .page-3 .pg3-p-ctn .pg3-p {
+    width: 424px;
+    height: 77px;
+    margin: 30px 0px;
+    color: #585c7b;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.6px;
   }
 }
 @media (min-width: 1400px) {

@@ -1,37 +1,6 @@
 @import "./switch";
-
-$primaryFont: "manrope";
-$primarycolor: #131022;
-$colorSecondary: #585c7b;
-$h1Size: 2.5rem;
-$h1Weight: 800;
-
-@mixin paddingLeftRight {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-@mixin standardHeading {
-  color: #131022;
-  font-family: "manrope";
-  font-style: normal;
-  text-align: center;
-  font-weight: 800;
-}
-
-@mixin flexCCC {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin flexRCC {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
+@import "./utilities/variables";
+@import "./utilities/mixins";
 
 * {
   box-sizing: border-box;
@@ -119,11 +88,13 @@ header {
 
 .page-2 {
   .ft-intro {
-    text-align: center;
+    @include flexRCC;
     color: #585c7b;
     text-align: center;
-    font-size: 18px;
     font-style: normal;
+    width: 703px;
+    height: 86px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 29px;
   }
@@ -191,13 +162,6 @@ header {
 }
 
 .sp4 {
-  @include flexRCC;
-  width: 159px;
-  height: 99px;
-  padding: 33px 9px;
-  flex-shrink: 0;
-  border-radius: 8px;
-  border: 1px solid #e2e5f1;
   display: none;
 
   img {
@@ -294,6 +258,14 @@ header {
     font-weight: 400;
     line-height: 26px;
   }
+
+  .pg3-iphone-1 {
+    display: none;
+  }
+
+  .pg3-iphone-3 {
+    display: none;
+  }
 }
 
 .pg3-bg {
@@ -380,9 +352,11 @@ footer {
       margin-top: 1rem;
       color: #131022;
       text-align: center;
-      font-size: 44px;
-      font-style: normal;
-      font-weight: 800;
+      font: {
+        size: 44px;
+        weight: 800;
+        style: normal;
+      }
       line-height: 57px;
     }
 
@@ -471,10 +445,73 @@ footer {
         }
       }
     }
+
+    .sponsors {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 24px;
+
+      .sp4 {
+        width: 159px;
+        height: 99px;
+        border-radius: 8px;
+        padding: 32px 9px;
+        border-radius: 8px;
+        border: 1px solid #e2e5f1;
+        background: #fff;
+        display: block;
+      }
+    }
   }
 
   .desk {
     display: none;
+  }
+
+  .page-3 {
+    h2 {
+      margin-bottom: 2rem;
+    }
+    h3 {
+      margin-top: 2rem;
+    }
+    .pg3-bg {
+      padding: 64px 19px 48px 19px;
+    }
+
+    .pg3-iphone-ctn {
+      padding-left: 0.2px;
+      padding-right: 0.2px;
+
+      @include flexRCC;
+      .pg3-iphone-1 {
+        display: block;
+        width: 203px;
+        height: 410px;
+      }
+
+      .pg3-iphone-3 {
+        display: block;
+        width: 203px;
+        height: 410px;
+      }
+    }
+    .pg3-p-ctn {
+      @include flexCCC;
+
+      .pg3-p {
+        width: 424px;
+        height: 77px;
+        margin: 30px 0px;
+        color: #585c7b;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25.6px;
+      }
+    }
   }
 }
 

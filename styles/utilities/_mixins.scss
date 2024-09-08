@@ -1,0 +1,26 @@
+@mixin paddingLeftRight {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@mixin standardHeading {
+  color: #131022;
+  font-family: "manrope";
+  font-style: normal;
+  text-align: center;
+  font-weight: 800;
+}
+
+@mixin flexCCC {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexRCC {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
