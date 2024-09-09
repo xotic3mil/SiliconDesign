@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 .switch {
   position: relative;
   display: inline-block;
@@ -98,8 +99,9 @@ h1 {
   font-style: normal;
   text-align: center;
   font-weight: 800;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 26px 45px 56px 45px;
 }
 
 h2 {
@@ -127,12 +129,7 @@ header .ctn .logo {
   margin-right: auto;
 }
 .page-1 .background-gradient {
-  background: radial-gradient(
-    circle at center bottom,
-    rgba(99, 102, 241, 0.1) 0%,
-    rgba(218, 70, 239, 0.05) 42%,
-    rgba(241, 244, 253, 0.07) 83%
-  );
+  background: radial-gradient(circle at center bottom, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
   height: 100svh;
 }
 
@@ -152,8 +149,7 @@ header .ctn .logo {
   color: #585c7b;
   text-align: center;
   font-style: normal;
-  width: 703px;
-  height: 86px;
+  width: 365px;
   font-size: 1rem;
   font-weight: 400;
   line-height: 29px;
@@ -398,12 +394,7 @@ footer {
     max-width: 730px;
   }
   .page-1 .background-gradient {
-    background: radial-gradient(
-      circle at center bottom,
-      rgba(99, 102, 241, 0.1) 0%,
-      rgba(218, 70, 239, 0.05) 42%,
-      rgba(241, 244, 253, 0.07) 83%
-    );
+    background: radial-gradient(circle at center bottom, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
     height: 100%;
   }
   .pg1-grid {
@@ -419,7 +410,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     grid-column: 1/4;
-    margin-top: 1rem;
+    margin-bottom: 1rem;
     color: #131022;
     text-align: center;
     font-size: 44px;
@@ -485,6 +476,9 @@ footer {
   }
   header .ctn {
     gap: 3rem;
+  }
+  .page-2 .ft-intro {
+    width: 703px;
   }
   .page-2 .app-ft {
     display: grid;
@@ -626,6 +620,14 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
+  }
+  .newsletter-header {
+    width: 100%;
+  }
+  .newsletter-header h2 {
+    text-align: left;
+    margin-left: 1.25rem;
   }
 }
 @media (min-width: 1400px) {
