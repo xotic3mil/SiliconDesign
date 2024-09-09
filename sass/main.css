@@ -373,6 +373,31 @@ header .ctn .logo {
   padding: 32px 16px;
 }
 
+form {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+form input {
+  display: inline-flex;
+  height: 50.7px;
+  padding: 14.15px 18px 14.95px 48px;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 8px 0px 0px 8px;
+  border: 1px solid #d4d7e5;
+  background: #fff;
+}
+form button {
+  color: white;
+  border-radius: 0px 8px 8px 0px;
+  border: 1px solid #6366f1;
+  background: #6366f1;
+}
+
 .faq-ctn {
   display: none;
 }
@@ -391,7 +416,7 @@ footer {
 
 @media (min-width: 768px) {
   .ctn {
-    max-width: 730px;
+    max-width: 720px;
   }
   .page-1 .background-gradient {
     background: radial-gradient(circle at center bottom, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
@@ -623,11 +648,13 @@ footer {
     gap: 1rem;
   }
   .newsletter-header {
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   .newsletter-header h2 {
     text-align: left;
-    margin-left: 1.25rem;
   }
 }
 @media (min-width: 1400px) {

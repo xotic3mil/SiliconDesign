@@ -313,6 +313,32 @@ header {
   }
 }
 
+form {
+  @include mixins.paddingLeftRight;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  input {
+    display: inline-flex;
+    height: 50.7px;
+    padding: 14.15px 18px 14.95px 48px;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 8px 0px 0px 8px;
+    border: 1px solid #d4d7e5;
+    background: #fff;
+  }
+
+  button {
+    color: white;
+    border-radius: 0px 8px 8px 0px;
+    border: 1px solid #6366f1;
+    background: #6366f1;
+  }
+}
+
 .faq-ctn {
   display: none;
 }
@@ -331,7 +357,7 @@ footer {
 
 @media (min-width: 768px) {
   .ctn {
-    max-width: 730px;
+    max-width: 720px;
   }
 
   .page-1 {
@@ -594,11 +620,11 @@ footer {
     gap: 1rem;
   }
   .newsletter-header {
-    width: 100%;
+    @include mixins.flexRCC;
 
     h2 {
       text-align: left;
-      margin-left: 1.25rem;
+      
     }
   }
 }

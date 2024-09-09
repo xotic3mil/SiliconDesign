@@ -518,24 +518,20 @@
               <img src="/media/icons/notification-icon.svg" />
               <h2>Subscribe to our newsletter</h2>
             </div>
-            <div class="input-group mb-sm-5">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Your email"
-                aria-label="Recipient's username"
-                aria-describedby="button-addon2"
-                style="font-family: manrope"
-              />
-              <button
-                class="btn btn-outline-secondary"
-                type="button"
-                id="button-addon2"
-                style="background-color: #6366f1; color: white"
-              >
-                Subscribe
-              </button>
-            </div>
+            <form>
+              <div style="display: flex">
+                <label for="email" class="form-label"></label>
+                <input
+                  type="text"
+                  placeholder="Enter your email"
+                  name="email"
+                  id="email"
+                />
+                <button class="btn-subscribe" type="button" id="button-addon2">
+                  Subscribe
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </section>
