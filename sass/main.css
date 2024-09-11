@@ -135,7 +135,7 @@ span {
 :root[data-bs-theme=dark] p {
   color: #fff;
 }
-:root[data-bs-theme=dark] .page-5-bg {
+:root[data-bs-theme=dark] .page-5 {
   background: rgba(255, 255, 255, 0.05);
 }
 :root[data-bs-theme=dark] .paper-1 {
@@ -195,9 +195,7 @@ h1 {
   font-style: normal;
   text-align: center;
   font-weight: 800;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding: 26px 45px 56px 45px;
+  padding: 26px 100px 56px 100px;
 }
 
 h2 {
@@ -221,6 +219,9 @@ header .ctn .logo {
 
 .page-1 {
   background: radial-gradient(circle at center bottom, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
+}
+.page-1 .page-1-container {
+  min-width: 350px;
 }
 
 .iphone {
@@ -267,7 +268,7 @@ header .ctn .logo {
 
 .btn-store-wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
@@ -295,7 +296,7 @@ header .ctn .logo {
   align-items: center;
   width: 44px;
   height: 44px;
-  padding: 12px;
+  padding: 12px 0px;
   border-radius: 22px;
   border: 1px solid #fff;
   background: #fff;
@@ -424,10 +425,29 @@ header .ctn .logo {
   padding-right: 1rem;
 }
 .page-4 .newsletter-cnt {
-  display: flex;
-  flex-direction: row;
+  background: #f3f6ff;
   border-radius: 8px;
   gap: 1rem;
+}
+.page-4 .newsletter-cnt .newsletter-header {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 32px 16px;
+}
+.page-4 .newsletter-cnt .newsletter-header .newsletter {
+  display: block;
+}
+.page-4 .newsletter-cnt .newsletter-header .newsletter-d {
+  display: none;
+}
+.page-4 .newsletter-cnt .newsletter-header img {
+  width: 20%;
+  height: auto;
+}
+.page-4 .newsletter-cnt .newsletter-header .subscribe {
+  display: flex;
+  flex-direction: column;
 }
 .page-4 .btn-con {
   display: flex;
@@ -445,12 +465,6 @@ header .ctn .logo {
   text-align: center;
   font-style: normal;
   font-weight: 600;
-}
-.page-4 .newsletter-header {
-  display: flex;
-  flex-direction: row;
-  text-align: left;
-  padding: 32px 16px;
 }
 
 form {
@@ -483,12 +497,10 @@ form button {
 }
 
 .page-5 {
-  max-width: 1320px;
   display: none;
 }
-.page-5 .page-5-bg {
-  background: #f3f6ff;
-  max-width: 1320px;
+.page-5 .page-5-container {
+  display: none;
 }
 
 .paper-container {
@@ -583,7 +595,7 @@ footer {
   }
   .pg1-grid h1 {
     padding: 0px 0px 0px 0px;
-    margin: 0px 110px;
+    margin: 0px 140px;
     grid-column: 1/13;
     margin-bottom: 1rem;
     color: #131022;
@@ -607,17 +619,19 @@ footer {
   }
   .pg1-grid .btn-store-wrapper {
     display: flex;
+    flex-direction: row;
     gap: 1rem;
   }
   .pg1-grid .btn-stores {
     grid-column: 1/6;
     grid-row: 5/11;
   }
-  .pg1-grid .btn-stores .btn-store {
+  .pg1-grid .btn-store {
     width: 126px;
   }
-  .pg1-grid .btn-stores .btn-store img {
+  .pg1-grid .btn-store img {
     width: 100%;
+    height: auto;
   }
   .pg1-grid .discover-grid {
     grid-column: 1/6;
@@ -751,6 +765,21 @@ footer {
     line-height: 160%;
     margin-bottom: 4rem;
   }
+  .page-4 .newsletter-cnt {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .page-4 .newsletter-cnt .newsletter-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .page-4 .newsletter-cnt .newsletter-header .newsletter {
+    display: block;
+  }
   .btn-con {
     display: none;
   }
@@ -790,27 +819,11 @@ footer {
     color: #22c55e;
     border: 0px;
   }
-  .newsletter-bg {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-  }
-  .newsletter-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .newsletter-header h2 {
-    text-align: left;
-  }
   .page-5 {
     display: none;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 768px) and (min-width: 1400px) {
   header .ctn {
     max-width: 1300px;
     gap: 3rem;
@@ -861,12 +874,6 @@ footer {
   .pg1-grid .btn-stores {
     grid-column: 1/5;
     grid-row: 4/5;
-  }
-  .pg1-grid .btn-stores .btn-store {
-    width: 126px;
-  }
-  .pg1-grid .btn-stores .btn-store img {
-    width: 100%;
   }
   .pg1-grid .discover-grid {
     grid-column: 1/4;
@@ -952,30 +959,61 @@ footer {
   .page-3 {
     background-color: #f3f6ff;
   }
-  .page-3 h2 {
-    margin-bottom: 2rem;
-  }
-  .page-3 h3 {
-    margin-top: 2rem;
-  }
   .page-3 .page-3-container {
     max-width: 1320px;
     margin: 0 auto;
   }
-  .pg3-iphone-ctn {
-    padding-left: 32.2px;
-    padding-right: 0.2px;
+  .page-3 .page-3-container h2 {
+    padding-top: 1rem;
   }
-  .pg3-iphone-ctn .pg3-iphone-1 {
-    display: block;
+  .page-3 .pg3-iphone-ctn {
+    gap: 40px;
   }
-  .pg3-iphone-ctn .pg3-iphone-3 {
-    display: block;
+  .page-3 .pg3-iphone-ctn .pg3-iphone-1 {
+    width: 300px; /* Example width */
+    height: auto;
   }
-  .pg3-iphone-ctn .page-4 {
+  .page-3 .pg3-iphone-ctn .pg3-iphone-2 {
+    width: 300px; /* Example width */
+    height: auto;
+  }
+  .page-3 .pg3-iphone-ctn .pg3-iphone-3 {
+    width: 300px; /* Example width */
+    height: auto;
+  }
+  .page-4 {
     max-width: 1320px;
   }
+  .page-4 .newsletter-cnt {
+    display: inline-flex;
+    padding: 72px 110px;
+    justify-content: center;
+    align-items: center;
+    gap: 78px;
+  }
+  .page-4 .newsletter-cnt .newsletter-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .page-4 .newsletter-cnt .newsletter-header img {
+    width: 78px;
+    height: 78px;
+  }
+  .page-4 .newsletter-cnt .newsletter-header .newsletter {
+    display: none;
+  }
+  .page-4 .newsletter-cnt .newsletter-header .newsletter-d {
+    display: block;
+  }
   .page-5 {
+    display: block;
+    background-color: #f3f6ff;
+  }
+  .page-5 .page-5-container {
+    max-width: 1320px;
+    margin: 0 auto;
     display: block;
   }
 }
