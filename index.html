@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -50,7 +50,7 @@
     </header>
     <main>
       <section class="page-1">
-        <div class="background-gradient">
+        <div class="page-1-container">
           <div class="pg1-grid">
             <h1>Manage All Your Money in One App</h1>
             <p class="pg-1-p">
@@ -67,11 +67,13 @@
                 </button>
               </div>
             </div>
-            <div class="discover-wrapper">
-              <div class="btn-discover">
-                <img src="/media/button_Icon.svg" />
+            <div class="discover-grid">
+              <div class="discover-wrapper">
+                <div class="btn-discover">
+                  <img src="/media/button_Icon.svg" />
+                </div>
+                <span>Discover more</span>
               </div>
-              <span>Discover more</span>
             </div>
             <div class="iphone">
               <img src="/media/Iphone/image (1).svg" alt="Iphone" />
@@ -80,116 +82,125 @@
         </div>
       </section>
       <section class="page-2">
-        <div class="page-2-ctn">
-          <div class="sponsors">
-            <div class="sp4">
-              <img src="/media/logo/logo1.svg" />
-            </div>
-            <div class="sp4">
-              <img src="/media/logo/logo2.svg" />
-            </div>
-            <div class="sp4">
-              <img src="/media/logo/logo3.svg" />
-            </div>
-            <div class="sp4">
-              <img src="/media/logo/logo4.svg" />
-            </div>
-            <div class="desk">
-              <img src="/media/logo/logo5.svg" />
-            </div>
-            <div class="desk">
-              <img src="/media/logo/logo6.svg" />
-            </div>
+        <div class="sponsors">
+          <div class="sp4">
+            <img src="/media/logo/logo1.svg" />
           </div>
-          <h2>App Features</h2>
-          <p class="ft-intro">
-            Our app offers 24/7 account access and allows you to download
-            transaction history in PDF, CSV, or Excel. Schedule future
-            transfers, create secure yet memorable passwords, and easily recover
-            them if needed.
-          </p>
-          <div class="app-ft">
-            <div class="app-ft-grid-1">
+          <div class="sp4">
+            <img src="/media/logo/logo2.svg" />
+          </div>
+          <div class="sp4">
+            <img src="/media/logo/logo3.svg" />
+          </div>
+          <div class="sp4">
+            <img src="/media/logo/logo4.svg" />
+          </div>
+          <div class="desk">
+            <img src="/media/logo/logo5.svg" />
+          </div>
+          <div class="desk">
+            <img src="/media/logo/logo6.svg" />
+          </div>
+        </div>
+        <h2>App Features</h2>
+        <p class="ft-intro">
+          Our app offers 24/7 account access and allows you to download
+          transaction history in PDF, CSV, or Excel. Schedule future transfers,
+          create secure yet memorable passwords, and easily recover them if
+          needed.
+        </p>
+        <div class="app-ft">
+          <div class="app-ft-grid-2">
+            <img
+              src="/media/Iphone/app_ft_iphone.svg"
+              alt="Iphone"
+              class="app-ft-iphone"
+              style="width: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="app-ft-grid-1">
+            <div class="app-ft-icon">
               <div class="ft-bg-pg2">
                 <img src="/media/icons/payments.svg" alt="Easy Payments" />
               </div>
-              <div class="ft-text">
-                <h3>Easy Payments</h3>
-                <p>
-                  Payments in our app make managing transactions effortless and
-                  efficient.
-                </p>
-              </div>
             </div>
-            <div class="app-ft-grid-1">
-              <div class="ft-bg-pg2">
-                <img src="/media/icons/security.svg" alt="Data Security" />
-              </div>
-              <div class="ft-text">
-                <h3>Data Security</h3>
-                <p>
-                  Top priority for our app, ensuring that your personal and
-                  financial information is protected.
-                </p>
-              </div>
+            <div class="ft-text">
+              <h3>Easy Payments</h3>
+              <p>
+                Payments in our app make managing transactions effortless and
+                efficient.
+              </p>
             </div>
-            <div class="app-ft-grid-1">
-              <div class="ft-bg-pg2">
-                <img src="/media/icons/statistics.svg" alt="Cost Statistics" />
-              </div>
-              <div class="ft-text">
-                <h3>Cost Statistics</h3>
-                <p>
-                  in our app provide you with valuable insights into your
-                  spending patterns and financial habits.
-                </p>
-              </div>
+          </div>
+          <div class="app-ft-grid-1">
+            <div class="ft-bg-pg2">
+              <img src="/media/icons/security.svg" alt="Data Security" />
             </div>
-            <div class="app-ft-grid-1">
-              <div class="ft-bg-pg2">
-                <img
-                  src="/media//icons/support.svg"
-                  alt="Support 24/7"
-                  class="box"
-                />
-              </div>
-              <div class="ft-text">
-                <h3>Support 24/7</h3>
-                <p>
-                  We ensure that you receive help and assistance whenever you
-                  need it, around the clock.
-                </p>
-              </div>
+            <div class="ft-text">
+              <h3>Data Security</h3>
+              <p>
+                Top priority for our app, ensuring that your personal and
+                financial information is protected.
+              </p>
             </div>
-            <div class="app-ft-grid-1">
-              <div class="ft-bg-pg2">
-                <img src="/media/icons/cashback.svg" alt="Regular Cashback" />
-              </div>
-              <div class="ft-text">
-                <h3>Regular Cashback</h3>
-                <p>
-                  This is a rewarding feature of our app designed to give you
-                  money back on your everyday purchases.
-                </p>
-              </div>
+          </div>
+          <div class="app-ft-grid-1">
+            <div class="ft-bg-pg2">
+              <img src="/media/icons/statistics.svg" alt="Cost Statistics" />
             </div>
-            <div class="app-ft-grid-1">
-              <div class="ft-bg-pg2">
-                <img src="/media/icons/happy.svg" alt="Top Standards" />
-              </div>
-              <div class="ft-text">
-                <h3>Top Standards</h3>
-                <p>
-                  in our app ensure that you receive a high-quality, reliable,
-                  and secure experience.
-                </p>
-              </div>
+            <div class="ft-text">
+              <h3>Cost Statistics</h3>
+              <p>
+                in our app provide you with valuable insights into your spending
+                patterns and financial habits.
+              </p>
+            </div>
+          </div>
+          <div class="app-ft-grid-1">
+            <div class="ft-bg-pg2">
+              <img
+                src="/media//icons/support.svg"
+                alt="Support 24/7"
+                class="box"
+              />
+            </div>
+            <div class="ft-text">
+              <h3>Support 24/7</h3>
+              <p>
+                We ensure that you receive help and assistance whenever you need
+                it, around the clock.
+              </p>
+            </div>
+          </div>
+          <div class="app-ft-grid-1">
+            <div class="ft-bg-pg2">
+              <img src="/media/icons/cashback.svg" alt="Regular Cashback" />
+            </div>
+            <div class="ft-text">
+              <h3>Regular Cashback</h3>
+              <p>
+                This is a rewarding feature of our app designed to give you
+                money back.
+              </p>
+            </div>
+          </div>
+          <div class="app-ft-grid-1">
+            <div class="ft-bg-pg2">
+              <img src="/media/icons/happy.svg" alt="Top Standards" />
+            </div>
+            <div class="ft-text">
+              <h3>Top Standards</h3>
+              <p>
+                in our app ensure that you receive a high-quality, reliable, and
+                secure experience.
+              </p>
             </div>
           </div>
         </div>
+        <!-- </div> -->
       </section>
       <section class="page-3">
-        <div class="pg3-bg">
+        <div class="page-3-container">
           <div class="pg3-ctn">
             <h2>How Does It Work?</h2>
             <div class="pg3-iphone-ctn">
@@ -221,6 +232,69 @@
           </div>
         </div>
       </section>
+      <section class="page-5">
+        <div class="page-5-bg">
+          <div class="paper-container">
+            <h2>Clients Are Loving Our App</h2>
+            <article class="paper-1" id="customer-1">
+              <div class="quotes">
+                <img src="/media/quotes.svg" alt="Quotes" />
+              </div>
+              <div class="paper-1-container">
+                <div class="rating">
+                  <img src="/media/rating_2.svg" alt="Rating" />
+                </div>
+                <p class="review">
+                  "I’ve been using Silicon Banking for the past six months, and
+                  it has completely revolutionized the way I handle my finances.
+                  The app’s interface is incredibly user-friendly, making tasks
+                  like checking balances, transferring money, and paying bills
+                  super easy. Everything is just a tap away, which saves me a
+                  ton of time."
+                </p>
+                <div class="paper-1-customer-wrapper">
+                  <img
+                    src="/media/portrait_1.svg"
+                    alt="Portrait of Fannie Summers"
+                  />
+                  <div class="paper-1-customer">
+                    <h6>Fannie Summers</h6>
+                    <p>Desginer</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="paper-2" id="customer-2">
+              <div class="quotes">
+                <img src="/media/quotes.svg" alt="Quotes" />
+              </div>
+              <div class="paper-1-container">
+                <div class="rating">
+                  <img src="/media/rating.svg" alt="Rating" />
+                </div>
+                <p class="review">
+                  "I’ve been using Silicon Banking for the past six months, and
+                  it has completely revolutionized the way I handle my finances.
+                  The app’s interface is incredibly user-friendly, making tasks
+                  like checking balances, transferring money, and paying bills
+                  super easy. Everything is just a tap away, which saves me a
+                  ton of time."
+                </p>
+                <div class="paper-1-customer-wrapper">
+                  <img
+                    src="/media/portrait_2.svg"
+                    alt="Portrait of Albert Flores"
+                  />
+                  <div class="paper-1-customer">
+                    <h6>Albert Flores</h6>
+                    <p>Developer</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
       <section class="page-4">
         <div class="pg4-h2-container">
           <h2>Any questions? Check out the FAQs</h2>
@@ -229,7 +303,7 @@
           Still have unanswered questions and need to get in touch?
         </p>
         <div class="accordion" id="accordionPanelsStayOpenExample">
-          <div class="accordion-item border-0" style="margin-bottom: 1rem">
+          <div class="accordion-item" style="margin-bottom: 1rem">
             <h2 class="accordion-header">
               <button
                 class="accordion-button"
@@ -238,12 +312,6 @@
                 data-bs-target="#panelsStayOpen-collapseOne"
                 aria-expanded="true"
                 aria-controls="panelsStayOpen-collapseOne"
-                style="
-                  font-family: manrope;
-                  font-weight: 800;
-                  box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06),
-                    0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
-                "
               >
                 Is any of my personal information stored in the App?
               </button>
@@ -252,10 +320,7 @@
               id="panelsStayOpen-collapseOne"
               class="accordion-collapse collapse show"
             >
-              <div
-                class="accordion-body"
-                style="font-family: manrope; color: #585c7b"
-              >
+              <div class="accordion-body">
                 When you use our app, your privacy and security are our top
                 priorities. We understand that you may have concerns about your
                 personal information, and that's why we've designed our app with
@@ -273,7 +338,7 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item border-0" style="margin-bottom: 1rem">
+          <div class="accordion-item" style="margin-bottom: 1rem">
             <h2 class="accordion-header">
               <button
                 class="accordion-button collapsed"
@@ -282,12 +347,6 @@
                 data-bs-target="#panelsStayOpen-collapseTwo"
                 aria-expanded="false"
                 aria-controls="panelsStayOpen-collapseTwo"
-                style="
-                  font-family: manrope;
-                  font-weight: 800;
-                  box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06),
-                    0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
-                "
               >
                 What formats can I download my transaction history in?
               </button>
@@ -296,10 +355,7 @@
               id="panelsStayOpen-collapseTwo"
               class="accordion-collapse collapse"
             >
-              <div
-                class="accordion-body"
-                style="font-family: manrope; color: #585c7b"
-              >
+              <div class="accordion-body">
                 Great question! We understand how important it is to have
                 flexible options for managing your transaction history. That’s
                 why our app offers a variety of formats for downloading your
@@ -317,7 +373,7 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item border-0" style="margin-bottom: 1rem">
+          <div class="accordion-item" style="margin-bottom: 1rem">
             <h2 class="accordion-header">
               <button
                 class="accordion-button collapsed"
@@ -326,12 +382,6 @@
                 data-bs-target="#panelsStayOpen-collapseThree"
                 aria-expanded="false"
                 aria-controls="panelsStayOpen-collapseThree"
-                style="
-                  font-family: manrope;
-                  font-weight: 800;
-                  box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06),
-                    0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
-                "
               >
                 Can I schedule future transfers?
               </button>
@@ -340,10 +390,7 @@
               id="panelsStayOpen-collapseThree"
               class="accordion-collapse collapse"
             >
-              <div
-                class="accordion-body"
-                style="font-family: manrope; color: #585c7b"
-              >
+              <div class="accordion-body">
                 Absolutely! With our app, managing your finances has never been
                 easier. We offer the convenience of scheduling future transfers,
                 so you can stay on top of your financial commitments without the
@@ -361,7 +408,7 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item border-0" style="margin-bottom: 1rem">
+          <div class="accordion-item" style="margin-bottom: 1rem">
             <h2 class="accordion-header">
               <button
                 class="accordion-button collapsed"
@@ -370,12 +417,6 @@
                 data-bs-target="#panelsStayOpen-collapseFour"
                 aria-expanded="false"
                 aria-controls="panelsStayOpen-collapseFour"
-                style="
-                  font-family: manrope;
-                  font-weight: 800;
-                  box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06),
-                    0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
-                "
               >
                 When can I use Banking App services?
               </button>
@@ -384,10 +425,7 @@
               id="panelsStayOpen-collapseFour"
               class="accordion-collapse collapse"
             >
-              <div
-                class="accordion-body"
-                style="font-family: manrope; color: #585c7b"
-              >
+              <div class="accordion-body">
                 Experience the ultimate convenience with our Banking App! Our
                 services are available to you 24/7, ensuring you have access to
                 your financial needs anytime, anywhere. Whether it's early in
@@ -404,7 +442,7 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item border-0" style="margin-bottom: 1rem">
+          <div class="accordion-item" style="margin-bottom: 1rem">
             <h2 class="accordion-header">
               <button
                 class="accordion-button collapsed"
@@ -413,12 +451,7 @@
                 data-bs-target="#panelsStayOpen-collapseFive"
                 aria-expanded="false"
                 aria-controls="panelsStayOpen-collapseFive"
-                style="
-                  font-family: manrope;
-                  font-weight: 800;
-                  box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06),
-                    0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
-                "
+                style="font-family: manrope; font-weight: 800"
               >
                 Can I create my own password that is easy for me to remember?
               </button>
@@ -427,10 +460,7 @@
               id="panelsStayOpen-collapseFive"
               class="accordion-collapse collapse"
             >
-              <div
-                class="accordion-body"
-                style="font-family: manrope; color: #585c7b"
-              >
+              <div class="accordion-body">
                 Absolutely! We believe that managing your security should be
                 both simple and personal. With our app, you can create a
                 password that’s easy for you to remember without compromising on
@@ -445,7 +475,7 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item border-0">
+          <div class="accordion-item">
             <h2 class="accordion-header">
               <button
                 class="accordion-button collapsed"
@@ -454,12 +484,7 @@
                 data-bs-target="#panelsStayOpen-collapseSix"
                 aria-expanded="false"
                 aria-controls="panelsStayOpen-collapseSix"
-                style="
-                  font-family: manrope;
-                  font-weight: 800;
-                  box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06),
-                    0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
-                "
+                style="font-family: manrope; font-weight: 800"
               >
                 What happens if I forget or lose my password?
               </button>
@@ -468,10 +493,7 @@
               id="panelsStayOpen-collapseSix"
               class="accordion-collapse collapse"
             >
-              <div
-                class="accordion-body"
-                style="font-family: manrope; color: #585c7b"
-              >
+              <div class="accordion-body">
                 No worries at all! If you ever forget or lose your password, our
                 app has you covered with a simple and secure recovery process.
                 We've designed an easy-to-follow, step-by-step solution to help

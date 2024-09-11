@@ -1,0 +1,39 @@
+.accordion {
+  border-color: var(--bs-accordion-border-color) !important;
+  background-color: var(--bs-accordion-bg) !important;
+  font-family: "manrope" !important;
+
+  .accordion-item {
+    border: none !important;
+  }
+
+  .accordion-body {
+    padding: 1rem !important;
+    font-size: 1rem !important;
+    color: var(--bs-accordion-text-color) !important;
+    background-color: var(--bs-accordion-bg) !important;
+  }
+
+  .accordion-button {
+    color: black !important;
+    background-color: white !important;
+    box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06),
+      0px 2px 6.4px -1px rgba(19, 16, 34, 0.03) !important;
+    font-weight: 800 !important;
+
+    &:active {
+      color: black !important;
+      background-color: white !important;
+    }
+
+    &:not(.collapsed) {
+      color: var(--bs-accordion-active-color);
+      background-color: white !important;
+    }
+
+    &:focus {
+      outline: none !important;
+      background-color: white !important;
+    }
+  }
+}

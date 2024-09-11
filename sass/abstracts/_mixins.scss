@@ -24,3 +24,10 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin flex($justify: flex-start, $align: stretch, $direction: row) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
