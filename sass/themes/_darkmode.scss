@@ -1,0 +1,85 @@
+:root[data-bs-theme="dark"] {
+  --bs-body-bg: #0b0f19; /* Background color */
+  --bs-body-color: #fff; /* Text color */
+  --bs-primary: #bb86fc; /* Primary color */
+
+  header {
+    .label {
+      color: #565973;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #fff;
+  }
+
+  p {
+    color: #fff;
+  }
+
+  .page-5 {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .paper-1 {
+    background: #0b0f19e8;
+    box-shadow: 0px 4.4px 12px -1px rgba(255, 255, 255, 0.06),
+      0px 2px 6.4px -1px rgba(255, 255, 255, 0.03);
+  }
+
+  .paper-2 {
+    background: #0b0f19e8;
+    box-shadow: 0px 4.4px 12px -1px rgba(255, 255, 255, 0.06),
+      0px 2px 6.4px -1px rgba(255, 255, 255, 0.03);
+  }
+
+  .newsletter-bg {
+    background-color: #0b0f19f6;
+  }
+
+  .ft-bg-pg2 {
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 4.4px 12px -1px rgba(255, 255, 255, 0.06),
+      0px 2px 6.4px -1px rgba(255, 255, 255, 0.03);
+  }
+
+  .sp4 {
+    img {
+      background: rgba(255, 255, 255, 0.05);
+    }
+  }
+
+  .page-3 {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .accordion {
+    border-color: var(--bs-accordion-border-color) !important;
+    font-family: "manrope" !important;
+
+    .accordion-button {
+      background: rgba(255, 255, 255, 0.04) !important;
+      color: #ffff !important;
+      border-radius: 8px !important;
+      box-shadow: 0px 4.4px 12px -1px rgba(255, 255, 255, 0.06),
+        0px 2px 6.4px -1px rgba(255, 255, 255, 0.03) !important;
+
+      &:active {
+        color: black !important;
+      }
+
+      &:not(.collapsed) {
+        color: var(--bs-accordion-active-color);
+      }
+
+      &:focus {
+        outline: none !important;
+      }
+    }
+  }
+}

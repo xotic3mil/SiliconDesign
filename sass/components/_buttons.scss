@@ -1,0 +1,28 @@
+@use "../abstracts/" as a;
+
+.btn-primary {
+  grid-row: 1;
+  grid-column: 6;
+  background-color: a.$primary-color;
+  color: a.$white-color;
+  border-radius: 8px;
+  padding: 12px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: a.$primary-color;
+  color: a.$white-color;
+  text-decoration: none;
+}
+
+.btn-mobile {
+  grid-column: 4;
+  grid-row: 1;
+  border: none;
+  justify-self: start;
+  background-color: transparent;
+}

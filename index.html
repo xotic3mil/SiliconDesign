@@ -24,31 +24,31 @@
     <title>Silicon Design</title>
   </head>
   <body>
-    <header>
-      <div class="ctn">
-        <div class="logo">
-          <img src="../media/solid.svg" alt="Logo" />
+    <div class="background-gradient">
+      <header>
+        <div class="ctn">
+          <div class="logo">
+            <img src="../media/solid.svg" alt="Logo" />
+          </div>
+          <nav class="navbar">
+            <a class="nav-ft" href="index.html">Features</a>
+          </nav>
+          <div id="darkmode-switch" class="btn-toggle-switch">
+            <span class="label">Dark mode</span>
+            <label class="switch" class="toggle-switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <a id="auth" href="#" class="btn-primary">
+            <i class="fa-thin fa-user-large"></i>
+            <span>Sign in / Up</span>
+          </a>
+          <button class="btn-mobile">
+            <i class="fa-regular fa-bars"></i>
+          </button>
         </div>
-        <nav class="navbar">
-          <a class="nav-ft" href="index.html">Features</a>
-        </nav>
-        <div id="darkmode-switch" class="btn-toggle-switch">
-          <span class="label">Dark mode</span>
-          <label class="switch" class="toggle-switch">
-            <input type="checkbox" />
-            <span class="slider round"></span>
-          </label>
-        </div>
-        <a id="auth" href="#" class="btn-primary">
-          <i class="fa-thin fa-user-large"></i>
-          <span>Sign in / Up</span>
-        </a>
-        <button class="btn-mobile">
-          <i class="fa-regular fa-bars"></i>
-        </button>
-      </div>
-    </header>
-    <main>
+      </header>
       <section class="page-1">
         <div class="page-1-container">
           <div class="pg1-grid">
@@ -81,6 +81,8 @@
           </div>
         </div>
       </section>
+    </div>
+    <main>
       <section class="page-2">
         <div class="sponsors">
           <div class="sp4">
@@ -197,7 +199,6 @@
             </div>
           </div>
         </div>
-        <!-- </div> -->
       </section>
       <section class="page-3">
         <div class="page-3-container">
@@ -230,7 +231,64 @@
           <br />
         </div>
       </section>
+      <section class="page-6">
+        <div class="page-6-container">
+          <div class="page-6-grid-1">
+            <h2>Make your money transfer simple and clear</h2>
+            <div class="statement-container">
+              <div class="statement">
+                <img src="/media/page-6_check-circle.svg" alt="Check Circle" />
+                <p>Banking transactions are free for you</p>
+              </div>
+              <div class="statement">
+                <img src="/media/page-6_check-circle.svg" alt="Check Circle" />
+                <p>No monthly cash commissions</p>
+              </div>
+              <div class="statement">
+                <img src="/media/page-6_check-circle.svg" alt="Check Circle" />
+                <p>Manage payments and transactions online</p>
+              </div>
+            </div>
+            <div class="btn-market-1">
+              <button class="btn-market-1-style">
+                Learn more <img src="/media/page-6-arrow.svg" />
+              </button>
+            </div>
+            <div class="market-1">
+              <img src="/media/page-6_1.svg" alt="Market" />
+            </div>
+          </div>
+          <div class="page-6-grid-2">
+            <h2>Receive payment from international bank details</h2>
+            <div class="pg6-comm-1">
+              <div class="ft-bg-pg2">
+                <img src="/media/icons/payments.svg" alt="Easy Payments" />
+              </div>
+              <p>
+                Manage your payments online. Mollis congue egestas egestas
+                fermentum fames.
+              </p>
+            </div>
+            <div class="pg6-comm-2">
+              <div class="ft-bg-pg2">
+                <img src="/media/icons/cashback.svg" alt="Regular Cashback" />
+              </div>
+              <p>
+                A elementur and imperdiet enim, pretium etiam facilisi aenean
+                quam mauris.
+              </p>
+            </div>
+            <div class="market-2">
+              <img src="/media/page-6_2.svg" alt="Market" />
+            </div>
+            <div class="btn-market-2">
+              <button class="btn-market-2-style">Learn more</button>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="page-5">
+        <br /><br />
         <div class="page-5-container">
           <div class="paper-container">
             <h2>Clients Are Loving Our App</h2>
@@ -266,17 +324,17 @@
               <div class="quotes">
                 <img src="/media/quotes.svg" alt="Quotes" />
               </div>
-              <div class="paper-1-container">
+              <div class="paper-2-container">
                 <div class="rating">
                   <img src="/media/rating.svg" alt="Rating" />
                 </div>
                 <p class="review">
-                  "I’ve been using Silicon Banking for the past six months, and
-                  it has completely revolutionized the way I handle my finances.
-                  The app’s interface is incredibly user-friendly, making tasks
-                  like checking balances, transferring money, and paying bills
-                  super easy. Everything is just a tap away, which saves me a
-                  ton of time."
+                  "Silicon Banking is also incredibly secure. I was initially
+                  hesitant about mobile banking, but the app’s multi-factor
+                  authentication and instant transaction notifications give me
+                  total peace of mind. Plus, customer support is always quick to
+                  respond and extremely helpful, whether I have a question or
+                  need help with something."
                 </p>
                 <div class="paper-1-customer-wrapper">
                   <img
@@ -292,6 +350,7 @@
             </article>
           </div>
         </div>
+        <br /><br />
       </section>
       <section class="page-4">
         <div class="pg4-h2-container">
@@ -534,25 +593,23 @@
           <div class="newsletter-header">
             <img src="/media/icons/notification-icon.svg" />
             <h2 class="newsletter">Subscribe to our newsletter</h2>
-            <h2 class="newsletter-d">Subscribe to our newsletter to stay informed about latest updates</h2>
-              <form>
-                <div style="display: flex;">
-                  <label for="email" class="form-label"></label>
-                  <input
-                    type="text"
-                    placeholder="Enter your email"
-                    name="email"
-                    id="email"
-                  />
-                  <button
-                    class="btn-subscribe"
-                    type="button"
-                    id="button-addon2"
-                  >
-                    Subscribe
-                  </button>
-                </div>
-              </form>
+            <h2 class="newsletter-d">
+              Subscribe to our newsletter to stay informed about latest updates
+            </h2>
+            <form>
+              <div style="display: flex">
+                <label for="email" class="form-label"></label>
+                <input
+                  type="text"
+                  placeholder="Enter your email"
+                  name="email"
+                  id="email"
+                />
+                <button class="btn-subscribe" type="button" id="button-addon2">
+                  Subscribe
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </section>
