@@ -1,0 +1,197 @@
+@use "../abstracts/" as a;
+
+.page-4 {
+  margin-top: 2rem;
+  @include a.paddingLeftRight;
+
+  .newsletter-cnt {
+    background: #f3f6ff;
+    border-radius: 8px;
+    gap: 1rem;
+
+    .newsletter-header {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      padding: 32px 16px;
+
+      .newsletter {
+        display: block;
+      }
+      .newsletter-d {
+        display: none;
+      }
+
+      img {
+        width: 20%;
+        height: auto;
+      }
+
+      .subscribe {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  .btn-con {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 6px;
+
+    button {
+      border-radius: 6px;
+      border: 1px solid a.$primary-color;
+      background: a.$primary-color;
+      padding: 10px 28px 16px 28px;
+      color: a.$white-color;
+      text-align: center;
+      font-style: normal;
+      font-weight: 600;
+    }
+  }
+
+  form {
+    @include a.paddingLeftRight;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    input {
+      display: inline-flex;
+      height: 50.7px;
+      padding: 14.15px 18px 14.95px 48px;
+      justify-content: flex-end;
+      align-items: center;
+      border-radius: 8px 0px 0px 8px;
+      border: 1px solid #d4d7e5;
+      background: a.$white-color;
+    }
+
+    button {
+      color: a.$white-color;
+      border-radius: 0px 8px 8px 0px;
+      border: 1px solid a.$primary-color;
+      background: a.$primary-color;
+    }
+  }
+
+  .faq-ctn {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-4 {
+    max-width: 768px;
+    margin: 0 auto;
+
+    h2 {
+      color: #0b0f19;
+      text-align: center;
+      font-family: "manrope";
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 130%;
+    }
+    .pg-4-p {
+      color: #565973;
+      text-align: center;
+      font-family: "Manrope";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%;
+      margin-bottom: 4rem;
+    }
+
+    .newsletter-cnt {
+      @include a.flexRCC;
+      .newsletter-header {
+        @include a.flexRCC;
+        .newsletter {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .btn-con {
+    display: none;
+    button {
+      display: none;
+    }
+  }
+
+  .faq-ctn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0px 28px 34px 29px;
+
+    .faq {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-family: "manrope";
+      width: 343px;
+      padding: 24px;
+      gap: 8px;
+      border-radius: 8px;
+      border: 1px solid #e2e5f1;
+    }
+
+    .btn-faq-wrapper {
+      display: flex;
+
+      .btn-faq-1 {
+        background-color: a.$white-color;
+        text-decoration: none;
+        color: a.$primary-color;
+        border: 0px;
+      }
+
+      .btn-faq-2 {
+        background-color: a.$white-color;
+        text-decoration: none;
+        color: #22c55e;
+        border: 0px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .page-4 {
+    margin-top: 2rem;
+    max-width: 1320px;
+
+    .newsletter-cnt {
+      display: inline-flex;
+      padding: 72px 110px;
+      justify-content: center;
+      align-items: center;
+      gap: 78px;
+
+      .newsletter-header {
+        @include a.flexRCC;
+        img {
+          width: 78px;
+          height: 78px;
+        }
+
+        .newsletter {
+          display: none;
+        }
+
+        .newsletter-d {
+          display: block;
+        }
+      }
+    }
+  }
+}

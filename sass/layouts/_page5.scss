@@ -1,0 +1,122 @@
+@use "../abstracts/" as a;
+
+.page-5 {
+  display: none;
+
+  .page-5-container {
+    display: none;
+  }
+}
+
+.paper-container {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+
+  h2 {
+    grid-column: 1/4;
+  }
+
+  .paper-1 {
+    position: relative;
+    display: grid;
+    grid-column: 5/6;
+    grid-row: 1/2;
+    width: 416px;
+    .paper-1-container {
+      padding: 48px 24px 24px 24px;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06),
+        0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+    }
+
+    .quotes {
+      position: absolute;
+      top: -15px;
+      left: 40px;
+      display: flex;
+      width: 44px;
+      height: 44px;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      border-radius: 6px;
+      background: var(--Brand-Primary, #6366f1);
+      box-shadow: 0px 8px 18px -8px rgba(99, 102, 241, 0.9);
+    }
+  }
+
+  .paper-2 {
+    position: relative;
+    display: grid;
+    grid-column: 9/10;
+    grid-row: 1/2;
+    width: 416px;
+
+    .paper-2-container {
+      padding: 48px 24px 24px 24px;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06),
+        0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+    }
+
+    .quotes {
+      position: absolute;
+      top: -15px;
+      left: 40px;
+      display: flex;
+      width: 44px;
+      height: 44px;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      border-radius: 6px;
+      background: var(--Brand-Primary, #6366f1);
+      box-shadow: 0px 8px 18px -8px rgba(99, 102, 241, 0.9);
+    }
+  }
+
+  .rating {
+    margin-bottom: 1rem;
+  }
+
+  .review {
+    font-family: "manrope";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: a.$secondary-color;
+  }
+
+  .paper-1-customer-wrapper {
+    display: flex;
+    width: 258px;
+    gap: 16px;
+    align-items: center;
+  }
+
+  h6 {
+    margin: 0px 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-5 {
+    display: none;
+  }
+}
+
+@media (min-width: 1400px) {
+  .page-5 {
+    display: block;
+    background-color: a.$light-gray;
+
+    .page-5-container {
+      max-width: 1320px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}

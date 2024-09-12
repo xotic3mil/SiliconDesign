@@ -1,0 +1,96 @@
+@use "../abstracts/" as a;
+
+header {
+  margin-bottom: 4rem;
+  .ctn {
+    @include a.paddingLeftRight;
+    display: grid;
+    align-items: center;
+    grid-template-areas: "logo nav auth";
+    grid-template-columns: auto auto 1fr;
+    gap: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    .logo {
+      grid-column: 1;
+    }
+    .btn-toggle-switch {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+    .btn-toggle-switch .label {
+      display: none;
+    }
+  }
+
+  .nav-ft {
+    display: none;
+  }
+
+  #auth {
+    display: none;
+  }
+
+  .btn-mobile {
+    grid-column: 4;
+    grid-row: 1;
+    border: none;
+    justify-self: start;
+    background-color: transparent;
+  }
+
+  .btn-primary {
+    grid-row: 1;
+    grid-column: 6;
+    background-color: a.$primary-color;
+    color: a.$white-color;
+    border-radius: 8px;
+    padding: 12px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .btn-primary:hover {
+    background-color: a.$primary-color;
+    color: a.$white-color;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .ctn {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  header .ctn {
+    gap: 1rem;
+  }
+
+  .btn-toggle-switch .label {
+    display: block;
+  }
+}
+
+@media (min-width: 1400px) {
+  header .ctn {
+    max-width: 1320px;
+    margin: 0 auto;
+    gap: 3rem;
+
+    .nav-ft {
+      display: block;
+    }
+
+    #auth {
+      display: block;
+    }
+    .btn-toggle-switch .label {
+      display: block;
+    }
+  }
+}
