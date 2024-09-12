@@ -228,8 +228,13 @@ header .btn-primary:hover {
     display: block;
   }
 }
-.page-1 .page-1-container {
-  min-width: 350px;
+.page-1 h1 {
+  color: #131022;
+  font-family: "manrope";
+  font-style: normal;
+  text-align: center;
+  font-weight: 800;
+  padding: 26px 100px 56px 100px;
 }
 .page-1 .iphone {
   display: none;
@@ -267,6 +272,11 @@ header .btn-primary:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  color: #585c7b;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
   gap: 1rem;
 }
 .page-1 .btn-discover {
@@ -319,7 +329,6 @@ header .btn-primary:hover {
   .pg1-grid .btn-store-wrapper {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
   }
   .pg1-grid .btn-stores {
     grid-column: 1/6;
@@ -354,38 +363,17 @@ header .btn-primary:hover {
     max-width: 1320px;
     margin: 0 auto;
   }
-  .pg1-grid {
-    display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-  }
   .pg1-grid h1 {
-    padding: 0px 0px 0px 0px;
     margin: 10px 0px;
     width: 450px;
     text-align: left;
     grid-column: 1/7;
     grid-row: 5/7;
-    color: #131022;
-    font-size: 44px;
-    font-weight: 800;
-    font-style: normal;
-    line-height: 57px;
   }
   .pg1-grid .pg-1-p {
     padding-left: 0px;
     grid-column: 1/5;
     grid-row: 7/8;
-    text-align: left;
-    color: #585c7b;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-  }
-  .pg1-grid .btn-store-wrapper {
-    display: flex;
-    justify-content: start;
-    gap: 1rem;
   }
   .pg1-grid .btn-stores {
     grid-column: 1/5;
@@ -395,7 +383,6 @@ header .btn-primary:hover {
     display: flex;
     align-items: center;
     padding: 10px 20px;
-    border-radius: 10px;
     color: white;
     font-size: 14px;
   }
@@ -406,16 +393,6 @@ header .btn-primary:hover {
   .pg1-grid .discover-grid {
     grid-column: 1/4;
     grid-row: 9/10;
-  }
-  .pg1-grid .discover-grid .discover-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    color: #585c7b;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22px;
   }
   .pg1-grid .iphone {
     display: grid;
@@ -1291,15 +1268,6 @@ body {
 a {
   color: #131022;
   font-weight: 400;
-}
-
-h1 {
-  color: #131022;
-  font-family: "manrope";
-  font-style: normal;
-  text-align: center;
-  font-weight: 800;
-  padding: 26px 100px 56px 100px;
 }
 
 h2 {

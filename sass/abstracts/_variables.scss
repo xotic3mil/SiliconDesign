@@ -24,3 +24,10 @@ $padding-large: 32px;
 $margin-small: 1rem;
 $margin-medium: 2rem;
 $margin-large: 3rem;
+
+$backgroundGradient: radial-gradient(
+  circle at center bottom,
+  rgba(99, 102, 241, 0.1) 0%,
+  rgba(218, 70, 239, 0.05) 42%,
+  rgba(241, 244, 253, 0.07) 83%
+);
