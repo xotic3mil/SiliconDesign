@@ -268,19 +268,18 @@ header .btn-primary:hover {
 }
 .page-1 .btn-store-wrapper .btn-store {
   height: 3.25rem;
-  width: 100%;
-  padding: 8px;
+  width: 90%;
   border-radius: 8px;
   background-color: #131022;
-}
-.page-1 .btn-store-wrapper .btn-store p {
-  color: white;
-  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .page-1 .btn-store-wrapper .btn-store img {
-  width: 100%;
-  height: 100%;
+  padding: 10px 10px;
   object-fit: contain;
+  height: auto;
 }
 .page-1 .discover-wrapper {
   display: flex;
@@ -350,6 +349,11 @@ header .btn-primary:hover {
     grid-column: 1/6;
     grid-row: 5/11;
   }
+  .pg1-grid .btn-stores .btn-store img {
+    padding: 10px 10px;
+    width: 100%;
+    height: auto;
+  }
   .pg1-grid .discover-grid {
     grid-column: 1/6;
     grid-row: 6/11;
@@ -397,14 +401,12 @@ header .btn-primary:hover {
   }
   .pg1-grid .btn-stores .btn-store {
     display: flex;
-    align-items: center;
-    padding: 10px 20px;
     color: white;
-    font-size: 14px;
   }
-  .pg1-grid .btn-stores .btn-store span {
-    padding: 100px 10px;
-    margin: 0px 0px;
+  .pg1-grid .btn-stores .btn-store img {
+    padding: 10px 10px;
+    width: 85%;
+    height: auto;
   }
   .pg1-grid .discover-grid {
     grid-column: 1/4;
@@ -1209,6 +1211,11 @@ input:checked + .slider:before {
   background-color: white !important;
 }
 
+.store-dark,
+.store-light {
+  display: none;
+}
+
 :root[data-bs-theme=dark] {
   --bs-body-bg: #0b0f19; /* Background color */
   --bs-body-color: #fff; /* Text color */
@@ -1216,6 +1223,9 @@ input:checked + .slider:before {
 }
 :root[data-bs-theme=dark] header .label {
   color: #fff;
+}
+:root[data-bs-theme=dark] .store-dark {
+  display: block;
 }
 :root[data-bs-theme=dark] h1,
 :root[data-bs-theme=dark] h2,
@@ -1239,6 +1249,9 @@ input:checked + .slider:before {
 }
 :root[data-bs-theme=dark] .sp4 img {
   background: rgba(255, 255, 255, 0.05);
+}
+:root[data-bs-theme=dark] .btn-store {
+  background: rgb(255, 255, 255);
 }
 :root[data-bs-theme=dark] .page-3 {
   background: rgba(255, 255, 255, 0.05);
@@ -1284,6 +1297,10 @@ input:checked + .slider:before {
 }
 :root[data-bs-theme=dark] .btn-faq-wrapper .btn-faq-2 {
   background: rgba(255, 255, 255, 0);
+}
+
+[data-bs-theme=light] .store-light {
+  display: inline;
 }
 
 body {
