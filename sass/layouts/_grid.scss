@@ -1,0 +1,9 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+@mixin grid-item($col-span) {
+  display: grid;
+  grid-column: $col-span;
+}

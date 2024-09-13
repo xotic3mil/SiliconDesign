@@ -20,90 +20,89 @@
     <meta name="description" content="Assignment to learn HTML, CSS (SCSS)" />
     <meta name="keywords" content="HTML, CSS (SCSS)" />
     <meta name="author" content="Emil Begovic" />
-    <link rel="icon" href="../HTML & CSS/media/solid.svg" />
+    <link rel="icon" href="./media/logo.svg" type="image/x-icon" />
     <title>Silicon Design</title>
   </head>
   <body>
-    <div class="background-gradient">
-      <header>
-        <div class="ctn">
-          <div class="logo">
-            <img src="../media/solid.svg" alt="Logo" />
-          </div>
-          <nav class="navbar">
-            <a class="nav-ft" href="index.html">Features</a>
-          </nav>
-          <div id="darkmode-switch" class="btn-toggle-switch">
-            <span class="label">Dark mode</span>
-            <label class="switch" class="toggle-switch">
-              <input type="checkbox" />
-              <span class="slider round"></span>
-            </label>
-          </div>
-          <a id="auth" href="#" class="btn-primary">
-            <i class="fa-thin fa-user-large"></i>
-            <span>Sign in / Up</span>
-          </a>
-          <button class="btn-mobile">
-            <i class="fa-regular fa-bars"></i>
-          </button>
+    <header class="gloss">
+      <div class="ctn">
+        <div class="logo">
+          <img src="../media/logo.svg" alt="Logo" />
+          <span>Silicon</span>
         </div>
-      </header>
-      <section class="page-1">
-        <div class="page-1-container">
-          <div class="pg1-grid">
-            <h1>Manage All Your Money in One App</h1>
-            <p class="pg-1-p">
-              We offer you a new generation of mobile banking. Save, spend &
-              manage money in your pocket.
-            </p>
-            <div class="btn-stores">
-              <div class="btn-store-wrapper">
-                <button class="btn-store">
-                  <img src="/media/apple.svg" alt="App Store" />
-                  <!-- <span>Download on the App Store</span> -->
-                </button>
-                <button class="btn-store">
-                  <img src="/media/google.svg" alt="Play Store" />
-                  <!-- <span>Get it on Google Play</span> -->
-                </button>
-              </div>
-            </div>
-            <div class="discover-grid">
-              <div class="discover-wrapper">
-                <div class="btn-discover">
-                  <img src="/media/button_Icon.svg" />
-                </div>
-                <span>Discover more</span>
-              </div>
-            </div>
-            <div class="iphone">
-              <img src="/media/Iphone/image (1).svg" alt="Iphone" />
+        <nav class="navbar">
+          <a class="nav-ft" href="index.html">Features</a>
+        </nav>
+        <div id="darkmode-switch" class="btn-toggle-switch">
+          <span class="label">Dark mode</span>
+          <label class="switch" class="toggle-switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <a id="auth" href="#" class="btn-primary">
+          <i class="fa-thin fa-user-large"></i>
+          <span>Sign in / Up</span>
+        </a>
+        <button class="btn-mobile">
+          <i class="fa-regular fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <section class="page-1 background-gradient">
+      <div class="page-1-container">
+        <div class="pg1-grid">
+          <h1>Manage All Your Money in One App</h1>
+          <p class="pg-1-p">
+            We offer you a new generation of mobile banking. Save, spend &
+            manage money in your pocket.
+          </p>
+          <div class="btn-stores">
+            <div class="btn-store-wrapper">
+              <button class="btn-store">
+                <img src="/media/apple.svg" alt="App Store" />
+                <!-- <span>Download on the App Store</span> -->
+              </button>
+              <button class="btn-store">
+                <img src="/media/google.svg" alt="Play Store" />
+                <!-- <span>Get it on Google Play</span> -->
+              </button>
             </div>
           </div>
+          <div class="discover-grid">
+            <div class="discover-wrapper">
+              <div class="btn-discover">
+                <img src="/media/button_Icon.svg" alt="Discover Arrow" />
+              </div>
+              <span>Discover more</span>
+            </div>
+          </div>
+          <div class="iphone">
+            <img src="/media/Iphone/image (1).svg" alt="Iphone" />
+          </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
     <main>
       <section class="page-2">
         <div class="sponsors">
           <div class="sp4">
-            <img src="/media/logo/logo1.svg" />
+            <img src="/media/logo/logo1.svg" alt="Sponsor 1" />
           </div>
           <div class="sp4">
-            <img src="/media/logo/logo2.svg" />
+            <img src="/media/logo/logo2.svg" alt="Sponsor 2" />
           </div>
           <div class="sp4">
-            <img src="/media/logo/logo3.svg" />
+            <img src="/media/logo/logo3.svg" alt="Sponsor 3" />
           </div>
           <div class="sp4">
-            <img src="/media/logo/logo4.svg" />
+            <img src="/media/logo/logo4.svg" alt="Sponsor 4" />
           </div>
           <div class="desk">
-            <img src="/media/logo/logo5.svg" />
+            <img src="/media/logo/logo5.svg" alt="Sponsor 5" />
           </div>
           <div class="desk">
-            <img src="/media/logo/logo6.svg" />
+            <img src="/media/logo/logo6.svg" alt="Sponsor 6" />
           </div>
         </div>
         <h2>App Features</h2>
@@ -253,7 +252,7 @@
             </div>
             <div class="btn-market-1">
               <button class="btn-market-1-style">
-                Learn more <img src="/media/page-6-arrow.svg" />
+                Learn more <img src="/media/page-6-arrow.svg" alt="Arrow" />
               </button>
             </div>
             <div class="market-1">
@@ -575,11 +574,11 @@
         </div>
         <div class="faq-ctn">
           <div class="faq">
-            <img src="/media/faq-1.svg" />
+            <img src="/media/faq-1.svg" alt="FAQ" />
             <p>Still have questions?</p>
             <div class="btn-faq-wrapper">
               <button class="btn-faq-1">Contact us</button>
-              <img src="/media/faq-1-arrow.svg" />
+              <img src="/media/faq-1-arrow.svg" alt="FAQ Arrow" />
             </div>
           </div>
           <div class="faq">
@@ -587,13 +586,16 @@
             <p>Don't like phone calls?</p>
             <div class="btn-faq-wrapper">
               <button class="btn-faq-2">Contact us</button>
-              <img src="/media/faq-2-arrow.svg" />
+              <img src="/media/faq-2-arrow.svg" alt="FAQ Arrow" />
             </div>
           </div>
         </div>
         <div class="newsletter-cnt">
           <div class="newsletter-header">
-            <img src="/media/icons/notification-icon.svg" />
+            <img
+              src="/media/icons/notification-icon.svg"
+              alt="Newsletter Icon"
+            />
             <h2 class="newsletter">Subscribe to our newsletter</h2>
             <h2 class="newsletter-d">
               Subscribe to our newsletter to stay informed about latest updates

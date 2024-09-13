@@ -1,20 +1,22 @@
 @use "../abstracts/" as a;
+@use "../base/" as b;
 
 .page-2 {
   .ft-intro {
+    margin-bottom: 5rem;
     color: a.$secondary-color;
     text-align: center;
     font-style: normal;
     font-size: 1rem;
     font-weight: 400;
-    line-height: 29px;
+    line-height: 30px;
   }
 
   .ft-text {
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 25.6px;
+    line-height: 25px;
   }
 
   .app-ft-grid-1 {
@@ -25,7 +27,7 @@
 }
 
 .ft-bg-pg2 {
-  @include a.flexCCC;
+  @include a.flex(column, center, center, 0);
   width: 60px;
   height: 60.08px;
   padding: 16px 16px 16px 16px;
@@ -35,30 +37,29 @@
 }
 
 .sponsors {
-  margin-top: 1rem;
+  margin-top: 6rem;
   margin-bottom: 1rem;
-  @include a.flexRCC;
+  @include a.flex(row, center, center, 0);
   gap: 5rem;
-}
 
-.sp4 {
-  display: none;
+  .sp4 {
+    display: none;
 
-  img {
-    width: 100%;
-    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
-}
-
-.desk {
-  @include a.flexRCC;
-  width: 159px;
-  height: 99px;
-  padding: 33px 9px;
-  flex-shrink: 0;
-  border-radius: 8px;
-  border: 1px solid #e2e5f1;
-  display: none;
+  .desk {
+    @include a.flex(row, center, center, 0);
+    width: 159px;
+    height: 99px;
+    padding: 33px 9px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid #e2e5f1;
+    display: none;
+  }
 }
 
 .app-ft {
@@ -93,7 +94,7 @@
     }
 
     .sponsors {
-      @include a.flexRCC;
+      @include a.flex(row, center, center, 0);
       gap: 24px;
 
       .sp4 {

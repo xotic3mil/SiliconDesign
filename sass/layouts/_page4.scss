@@ -108,10 +108,48 @@
       margin-bottom: 4rem;
     }
 
+    .faq-ctn {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0px 28px 34px 29px;
+
+      .faq {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-family: "manrope";
+        width: 343px;
+        padding: 24px;
+        gap: 8px;
+        border-radius: 8px;
+        border: 1px solid #e2e5f1;
+      }
+
+      .btn-faq-wrapper {
+        display: flex;
+
+        .btn-faq-1 {
+          background-color: a.$white-color;
+          text-decoration: none;
+          color: a.$primary-color;
+          border: 0px;
+        }
+
+        .btn-faq-2 {
+          background-color: a.$white-color;
+          text-decoration: none;
+          color: #22c55e;
+          border: 0px;
+        }
+      }
+    }
+
     .newsletter-cnt {
-      @include a.flexRCC;
+      @include a.flex(row, center, center, 0);
       .newsletter-header {
-        @include a.flexRCC;
+        @include a.flex(row, center, center, 0);
         .newsletter {
           display: block;
         }
@@ -123,44 +161,6 @@
     display: none;
     button {
       display: none;
-    }
-  }
-
-  .faq-ctn {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
-    padding: 0px 28px 34px 29px;
-
-    .faq {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      font-family: "manrope";
-      width: 343px;
-      padding: 24px;
-      gap: 8px;
-      border-radius: 8px;
-      border: 1px solid #e2e5f1;
-    }
-
-    .btn-faq-wrapper {
-      display: flex;
-
-      .btn-faq-1 {
-        background-color: a.$white-color;
-        text-decoration: none;
-        color: a.$primary-color;
-        border: 0px;
-      }
-
-      .btn-faq-2 {
-        background-color: a.$white-color;
-        text-decoration: none;
-        color: #22c55e;
-        border: 0px;
-      }
     }
   }
 }
@@ -178,7 +178,7 @@
       gap: 78px;
 
       .newsletter-header {
-        @include a.flexRCC;
+        @include a.flex(row, center, center, 0);
         img {
           width: 78px;
           height: 78px;

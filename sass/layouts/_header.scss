@@ -1,12 +1,21 @@
 @use "../abstracts/" as a;
 
 header {
-  margin-bottom: 4rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 2px;
+  margin-bottom: 5rem;
+
   .ctn {
     @include a.paddingLeftRight;
     display: grid;
     align-items: center;
-    grid-template-areas: "logo nav auth";
     grid-template-columns: auto auto 1fr;
     gap: 1.5rem;
     padding-top: 0.5rem;
@@ -14,6 +23,12 @@ header {
 
     .logo {
       grid-column: 1;
+      color: #131022;
+      font-family: "manrope";
+      font-size: 21.4px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 34.16px;
     }
     .btn-toggle-switch {
       display: flex;
@@ -27,6 +42,8 @@ header {
 
   .nav-ft {
     display: none;
+    text-decoration: none;
+    color: #000;
   }
 
   #auth {
@@ -67,12 +84,9 @@ header {
     margin: 0 auto;
   }
 
-  header .ctn {
-    gap: 1rem;
-  }
-
   .btn-toggle-switch .label {
     display: block;
+    font-weight: 600;
   }
 }
 

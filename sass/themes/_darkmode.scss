@@ -5,20 +5,31 @@
 
   header {
     .label {
-      color: #565973;
+      color: #fff;
     }
   }
+
+
+  $backgroundGradient: radial-gradient(
+  circle at center bottom,
+  rgba(99, 102, 241, 0.1) 0%,
+  rgba(218, 70, 239, 0.05) 41%,
+  rgba(241, 244, 253, 0.07) 55%,
+  rgb(94, 74, 74) 20%
+);
 
   h1,
   h2,
   h3,
   h4,
   h5,
-  h6 {
+  h6,
+  span,
+  p {
     color: #fff;
   }
 
-  p {
+  .nav-ft {
     color: #fff;
   }
 
