@@ -3,6 +3,15 @@
   padding-right: 1rem;
 }
 
+@mixin padding($padding-left, $padding-right) {
+  padding-left: $padding-left;
+  padding-right: $padding-right;
+}
+
+@mixin margin($margin) {
+  margin: $margin, $margin, $margin, $margin;
+}
+
 @mixin standardHeading {
   color: #131022;
   font-family: "manrope";

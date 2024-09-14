@@ -423,15 +423,6 @@ header .btn-primary:hover {
     height: auto;
   }
 }
-.page-2 .ft-intro {
-  margin-bottom: 5rem;
-  color: #585c7b;
-  text-align: center;
-  font-style: normal;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 30px;
-}
 .page-2 .ft-text {
   font-size: 1rem;
   font-style: normal;
@@ -512,9 +503,6 @@ header .btn-primary:hover {
     max-width: 768px;
     margin: 0 auto;
   }
-  .page-2 .ft-intro {
-    width: 703px;
-  }
   .page-2 .app-ft {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -547,18 +535,39 @@ header .btn-primary:hover {
     max-width: 1320px;
     margin: 0 auto;
   }
-  .page-2 .ft-intro {
-    width: 100%;
+  .page-2 .ft-grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+  .page-2 .ft-grid .ft-grid-obj-1 {
+    grid-column: 6/9;
+    grid-row: 1/2;
+    margin: 0px 0px;
+    padding: 0px 10px;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  .page-2 .ft-grid .ft-grid-obj-2 {
+    grid-column: 6/13;
+    grid-row: 2/3;
+    margin: 0px 0px;
+    padding: 0px 10px;
+    text-align: left;
+    margin-bottom: 3rem;
   }
   .page-2 .app-ft {
     grid-template-columns: repeat(12, minmax(0, 1fr));
-    gap: 2rem;
+    gap: 1rem;
   }
   .page-2 .app-ft-grid-1:nth-child(even) {
     grid-column: 6/9;
+    margin: 0px 0px;
+    padding: 0px 0px;
   }
   .page-2 .app-ft-grid-1:nth-child(odd) {
     grid-column: 9/12;
+    margin: 0px 0px;
+    padding: 0px 0px;
   }
   .page-2 .app-ft-grid-2 {
     grid-column: 2/5;
@@ -794,18 +803,16 @@ header .btn-primary:hover {
   }
   .page-4 .faq-ctn {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     gap: 1rem;
-    padding: 0px 28px 34px 29px;
+    margin-bottom: 2rem;
   }
   .page-4 .faq-ctn .faq {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     font-family: "manrope";
-    width: 343px;
-    padding: 24px;
+    width: 100%;
+    padding: 24px 10px;
     gap: 8px;
     border-radius: 8px;
     border: 1px solid #e2e5f1;
@@ -853,6 +860,31 @@ header .btn-primary:hover {
   .page-4 {
     margin-top: 2rem;
     max-width: 1320px;
+  }
+  .page-4 .page-4-grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+  .page-4 .page-4-grid h2 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    text-align: left;
+  }
+  .page-4 .page-4-grid p {
+    grid-column: 1/6;
+    grid-row: 3/4;
+    text-align: left;
+  }
+  .page-4 .page-4-grid .accordion {
+    grid-column: 6/13;
+    grid-row: 1/13;
+    margin-bottom: 2rem;
+  }
+  .page-4 .page-4-grid .faq-ctn {
+    grid-column: 1/5;
+    grid-row: 4/5;
+    margin: 0px 0px;
+    padding: 0px 0px;
   }
   .page-4 .newsletter-cnt {
     display: inline-flex;
@@ -1226,6 +1258,7 @@ input:checked + .slider:before {
 }
 :root[data-bs-theme=dark] .store-dark {
   display: block;
+  filter: inverse(100%) sepia(0%) saturate(100%) hue-rotate(180deg) brightness(100%) contrast(100%);
 }
 :root[data-bs-theme=dark] h1,
 :root[data-bs-theme=dark] h2,

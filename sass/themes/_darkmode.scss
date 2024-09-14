@@ -16,6 +16,7 @@
 
   .store-dark {
     display: block;
+        filter: inverse(100%) sepia(0%) saturate(100%) hue-rotate(180deg) brightness(100%) contrast(100%);
   }
 
   $backgroundGradient: radial-gradient(
