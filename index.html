@@ -15,6 +15,7 @@
       crossorigin="anonymous"
     />
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/toggle.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Assignment to learn HTML, CSS (SCSS)" />
@@ -221,6 +222,7 @@
       </section>
       <section class="page-3">
         <div class="page-3-container">
+          <br />
           <h2>How Does It Work?</h2>
           <div class="pg3-iphone-ctn">
             <img
@@ -613,16 +615,19 @@
         </div>
         <div class="newsletter-cnt">
           <div class="newsletter-header">
-            <img
-              src="/media/icons/notification-icon.svg"
-              alt="Newsletter Icon"
-            />
-            <h2 class="newsletter">Subscribe to our newsletter</h2>
-            <h2 class="newsletter-d">
-              Subscribe to our newsletter to stay informed about latest updates
-            </h2>
+            <div class="newsletter-wrapper">
+              <img
+                src="/media/icons/notification-icon.svg"
+                alt="Newsletter Icon"
+              />
+              <h2 class="newsletter">Subscribe to our newsletter</h2>
+              <h2 class="newsletter-d">
+                Subscribe to our newsletter to stay informed about latest
+                updates
+              </h2>
+            </div>
             <form>
-              <div style="display: flex">
+              <div class="subscribe">
                 <label for="email" class="form-label"></label>
                 <input
                   type="email"

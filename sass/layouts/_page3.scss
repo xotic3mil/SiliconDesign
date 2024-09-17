@@ -1,6 +1,7 @@
 @use "../abstracts/" as a;
 
 .page-3 {
+  background-color: a.$light-gray;
   width: 100%;
   align-items: center;
   text-align: center;
@@ -42,8 +43,6 @@
 
 @media (min-width: 768px) {
   .page-3 {
-    background-color: a.$light-gray;
-
     .page-3-container {
       max-width: 755px;
       margin: 0 auto;
@@ -87,8 +86,6 @@
 
 @media (min-width: 1400px) {
   .page-3 {
-    background-color: a.$light-gray;
-
     .page-3-container {
       margin: 0 auto;
     }

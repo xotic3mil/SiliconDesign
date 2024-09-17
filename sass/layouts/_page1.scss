@@ -3,6 +3,7 @@
 
 .page-1 {
   h1 {
+    animation: fade 2s;
     @include a.standardHeading;
     padding: 26px 100px 56px 100px;
   }
@@ -199,5 +200,14 @@
         height: auto;
       }
     }
+  }
+}
+
+@keyframes fade {
+  from {
+    transform: translateX(-900px);
+  }
+  to {
+    transform: translateX(0px);
   }
 }
