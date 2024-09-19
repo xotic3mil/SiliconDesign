@@ -8,10 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
   function switchTheme(e) {
     if (e.target.checked) {
       rootElement.setAttribute("data-bs-theme", "dark");
-      localStorage.setItem("theme", "dark"); // Save the theme choice
+      localStorage.setItem("theme", "dark"); //
     } else {
       rootElement.setAttribute("data-bs-theme", "light");
-      localStorage.setItem("theme", "light"); // Save the theme choice
+      localStorage.setItem("theme", "light"); // 
     }
   }
 

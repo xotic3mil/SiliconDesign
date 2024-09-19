@@ -2,6 +2,14 @@
 @use "../base/" as b;
 
 .page-2 {
+
+  .app-ft-intro{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
   .ft-text {
     font-size: 1rem;
     font-style: normal;
@@ -27,27 +35,13 @@
 }
 
 .sponsors {
-  margin-top: 6rem;
-  margin-bottom: 1rem;
   @include a.flex(row, center, center, 0);
   gap: 5rem;
 
   .sp4 {
     display: none;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
   }
   .desk {
-    @include a.flex(row, center, center, 0);
-    width: 159px;
-    height: 99px;
-    padding: 33px 9px;
-    flex-shrink: 0;
-    border-radius: 8px;
-    border: 1px solid #e2e5f1;
     display: none;
   }
 }
@@ -83,6 +77,8 @@
     .sponsors {
       @include a.flex(row, center, center, 0);
       gap: 24px;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
 
       .sp4 {
         width: 159px;
@@ -92,6 +88,11 @@
         border-radius: 8px;
         border: 1px solid #e2e5f1;
         display: block;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
       }
 
       .desk {
@@ -190,6 +191,8 @@
         width: 196px;
         height: 100px;
         padding: 34px 36px;
+        border-radius: 8px;
+        border: 1px solid #e2e5f1;
         justify-content: center;
         align-items: center;
       }

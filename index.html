@@ -7,15 +7,15 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/sass/main.css" />
-    <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link
       rel="stylesheet"
       href="https://kit.fontawesome.com/a576612222.css"
       crossorigin="anonymous"
     />
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/darkmode.js"></script>
+    <link rel="stylesheet" href="/sass/main.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <script src="/js/bootstrap.min.js" defer></script>
+    <script src="/darkmode.js" defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Assignment to learn HTML, CSS (SCSS)" />
@@ -45,7 +45,7 @@
           <i class="fa-thin fa-user-large"></i>
           <span>Sign in / Up</span>
         </a>
-        <button class="btn-mobile">
+        <button class="btn-mobile" aria-label="Mobile Button">
           <i class="fa-regular fa-bars"></i>
         </button>
       </div>
@@ -91,7 +91,7 @@
               <div class="btn-discover">
                 <img src="/media/button_Icon.svg" alt="Discover Arrow" />
               </div>
-              <span>Discover more</span>
+              <span class="space">Discover more</span>
             </div>
           </div>
           <div class="iphone">
@@ -123,8 +123,8 @@
           </div>
         </div>
         <div class="ft-grid">
-          <h2 class="ft-grid-obj-1">App Features</h2>
-          <p class="ft-grid-obj-2">
+          <h2 class="ft-grid-obj-1 app-ft-intro">App Features</h2>
+          <p class="ft-grid-obj-2 app-ft-intro">
             Our app offers 24/7 account access and allows you to download
             transaction history in PDF, CSV, or Excel. Schedule future
             transfers, create secure yet memorable passwords, and easily recover
@@ -366,7 +366,7 @@
                     alt="Portrait of Fannie Summers"
                   />
                   <div class="paper-1-customer">
-                    <h6>Fannie Summers</h6>
+                    <strong>Fannie Summers</strong>
                     <p>Desginer</p>
                   </div>
                 </div>
@@ -394,7 +394,7 @@
                     alt="Portrait of Albert Flores"
                   />
                   <div class="paper-1-customer">
-                    <h6>Albert Flores</h6>
+                    <strong>Albert Flores</strong>
                     <p>Developer</p>
                   </div>
                 </div>
@@ -635,7 +635,7 @@
               </div>
             </div>
             <div class="faq">
-              <img src="/media/faq-2.svg" />
+              <img src="/media/faq-2.svg" alt="FAQ" />
               <p>Don't like phone calls?</p>
               <div class="btn-faq-wrapper">
                 <button class="btn-faq-2">Contact us</button>
