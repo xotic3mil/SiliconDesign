@@ -25,4 +25,4 @@ For this submission, I have completed the layout of the page using HTML and CSS,
 
 ## Screenshot
 
-![Screenshots](image.png)
+![Screenshots](preview.png)
