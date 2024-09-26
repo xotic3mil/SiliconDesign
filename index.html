@@ -12,9 +12,12 @@
       href="https://kit.fontawesome.com/a576612222.css"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/sass/main.min.css" />
-    <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <script src="/js/bootstrap.min.js" defer></script>
+    <link rel="stylesheet" href="/sass/main.css" />
+    <link
+      rel="stylesheet"
+      href="/sass/vendors/bootstrap/css/bootstrap.min.css"
+    />
+    <script src="/sass/vendors/bootstrap/js/bootstrap.min.js" defer></script>
     <script src="/darkmode.js" defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,7 +40,7 @@
         <div id="darkmode-switch" class="btn-toggle-switch">
           <span class="label">Dark mode</span>
           <label class="switch toggle-switch" aria-label="darkmode switch">
-            <input type="checkbox" />
+            <input type="checkbox" name="checkbox" />
             <span class="slider round"></span>
           </label>
         </div>
@@ -95,7 +98,7 @@
             </div>
           </div>
           <div class="iphone">
-            <img src="/media/Iphone/image (1).svg" alt="Iphone" />
+            <img src="/media/Iphone/hero-iphone.png" alt="Iphone" />
           </div>
         </div>
       </div>
@@ -224,24 +227,6 @@
         <div class="page-3-container">
           <br />
           <h2>How Does It Work?</h2>
-          <!-- <div class="pg3-iphone-ctn">
-            <img
-              src="/media/Iphone/pg3_iphone_1.svg"
-              alt="screenshot"
-              class="pg3-iphone-1"
-            />
-            <img
-              src="/media/Iphone/pg3_iphone_2.svg"
-              alt="screenshot"
-              class="pg3-iphone-2"
-            />
-            <img
-              src="/media/Iphone/pg3_iphone_3.svg"
-              alt="screenshot"
-              class="pg3-iphone-3"
-            />
-          </div> -->
-
           <div
             id="carouselExampleSlidesOnly"
             class="carousel slide carousel-fade"
@@ -654,7 +639,7 @@
               />
               <h2 class="newsletter">Subscribe to our newsletter</h2>
               <h2 class="newsletter-d">
-                Subscribe to our newsletter to stay informed about latest
+                Subscribe to our newsletter to stay informed about the latest
                 updates
               </h2>
             </div>
@@ -666,6 +651,7 @@
                   placeholder="Enter your email"
                   name="email"
                   id="email"
+                  autocomplete="on"
                 />
                 <button class="btn-subscribe" type="submit" id="button-addon2">
                   Subscribe

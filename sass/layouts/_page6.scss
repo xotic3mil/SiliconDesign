@@ -12,8 +12,7 @@
   }
 
   .page-6-grid-1 {
-    display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
+    @include a.grid(12);
     gap: 1rem;
 
     h2 {
@@ -50,8 +49,7 @@
     }
   }
   .page-6-grid-2 {
-    display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
+    @include a.grid(12);
     gap: 1rem;
 
     h2 {
@@ -116,13 +114,13 @@
   }
 }
 
-@media (min-width: 768px) {
+@include a.respond-to("tablet") {
   .page-6 {
     display: none;
   }
 }
 
-@media (min-width: 1400px) {
+@include a.respond-to("desktop") {
   .page-6 {
     display: block;
 

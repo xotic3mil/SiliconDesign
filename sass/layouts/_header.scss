@@ -13,7 +13,7 @@ header {
   margin-bottom: 5rem;
 
   .ctn {
-    @include a.paddingLeftRight;
+    @include a.padding(1rem, 1rem);
     display: grid;
     align-items: center;
     grid-template-columns: auto auto 1fr;

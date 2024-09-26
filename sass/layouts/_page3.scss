@@ -7,7 +7,7 @@
   text-align: center;
 
   .page-3-container {
-    @include a.paddingLeftRight;
+    @include a.padding(1rem, 1rem);
   }
 
   .pg3-p {
@@ -41,7 +41,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@include a.respond-to("tablet") {
   .page-3 {
     .page-3-container {
       max-width: 755px;
@@ -84,7 +84,7 @@
   }
 }
 
-@media (min-width: 1400px) {
+@include a.respond-to("desktop") {
   .page-3 {
     .page-3-container {
       margin: 0 auto;

@@ -2,7 +2,7 @@
 
 .page-4 {
   margin-top: 2rem;
-  @include a.paddingLeftRight;
+  @include a.padding(1rem, 1rem);
 
   .newsletter-cnt {
     background: #f3f6ff;
@@ -59,7 +59,7 @@
   }
 
   form {
-    @include a.paddingLeftRight;
+    @include a.padding(1rem, 1rem);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,7 +89,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@include a.respond-to("tablet") {
   .page-4 {
     max-width: 768px;
     margin: 0 auto;
@@ -173,11 +173,10 @@
   }
 }
 
-@media (min-width: 1400px) {
+@include a.respond-to("desktop") {
   .page-4 {
     .page-4-grid {
-      display: grid;
-      grid-template-columns: repeat(12, minmax(0, 1fr));
+      @include a.grid(12);
 
       h2 {
         grid-column: 1/4;

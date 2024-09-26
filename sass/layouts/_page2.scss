@@ -2,14 +2,13 @@
 @use "../base/" as b;
 
 .page-2 {
-
-  .app-ft-intro{
+  .app-ft-intro {
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  
+
   .ft-text {
     font-size: 1rem;
     font-style: normal;
@@ -18,7 +17,7 @@
   }
 
   .app-ft-grid-1 {
-    @include a.paddingLeftRight;
+    @include a.padding(1rem, 1rem);
     display: flex;
     flex-direction: row;
   }
@@ -47,8 +46,7 @@
 }
 
 .app-ft {
-  display: grid;
-  grid-template-columns: 1fr;
+  @include a.grid(1);
 
   .app-ft-grid-2 {
     display: none;
@@ -65,13 +63,13 @@
   }
 }
 
-@media (min-width: 768px) {
+@include a.respond-to("tablet") {
   .page-2 {
     max-width: 768px;
     margin: 0 auto;
 
     .app-ft {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      @include a.grid(2);
     }
 
     .sponsors {
@@ -106,14 +104,13 @@
   }
 }
 
-@media (min-width: 1400px) {
+@include a.respond-to("desktop") {
   .page-2 {
     max-width: 1320px;
     margin: 0 auto;
 
     .ft-grid {
-      display: grid;
-      grid-template-columns: repeat(12, minmax(0, 1fr));
+      @include a.grid(12);
 
       .ft-grid-obj-1 {
         grid-column: 6/9;
@@ -133,7 +130,7 @@
       }
     }
     .app-ft {
-      grid-template-columns: repeat(12, minmax(0, 1fr));
+      @include a.grid(12);
       gap: 1rem;
     }
 
